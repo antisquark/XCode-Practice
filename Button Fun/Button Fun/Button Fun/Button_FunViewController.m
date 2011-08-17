@@ -7,6 +7,7 @@
 //
 
 #import "Button_FunViewController.h"
+#import "DrawView.h"
 
 @implementation Button_FunViewController
 
@@ -32,19 +33,19 @@
 
 #pragma mark - View lifecycle
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DrawView *bView = [[DrawView alloc] initWithFrame:CGRectMake(100,100,100,100)];
 }
-*/
+
 
 
 //ISAAC: I'm assuming this replaces the definition of -(void)dealloc referred to on 38 of beginning Iphone development
+//isaac: WRONG you must add a dealloc method.
 - (void)viewDidUnload
 {
-    [statusText release];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,6 +55,12 @@
 {
     // Return YES for supported orientations
     return YES;
+}
+
+- (void)dealloc
+{
+    [statusText release];
+    [super dealloc];
 }
 
 @end

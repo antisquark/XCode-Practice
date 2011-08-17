@@ -23,6 +23,8 @@
 		6407E71B13FC2DE400DD9453 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6407E71913FC2DE400DD9453 /* InfoPlist.strings */; };
 		6407E71D13FC2DE400DD9453 /* Button_FunTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6407E71C13FC2DE400DD9453 /* Button_FunTests.h */; };
 		6407E71F13FC2DE400DD9453 /* Button_FunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E71E13FC2DE400DD9453 /* Button_FunTests.m */; };
+		6407E72C13FC448600DD9453 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E72A13FC448600DD9453 /* DrawView.m */; };
+		6407E72D13FC448600DD9453 /* DrawView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6407E72B13FC448600DD9453 /* DrawView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		6407E71A13FC2DE400DD9453 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6407E71C13FC2DE400DD9453 /* Button_FunTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button_FunTests.h; sourceTree = "<group>"; };
 		6407E71E13FC2DE400DD9453 /* Button_FunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button_FunTests.m; sourceTree = "<group>"; };
+		6407E72913FC448600DD9453 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		6407E72A13FC448600DD9453 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		6407E72B13FC448600DD9453 /* DrawView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,7 @@
 		6407E6F413FC2DE400DD9453 /* Button Fun */ = {
 			isa = PBXGroup;
 			children = (
+				6407E72813FC442D00DD9453 /* DrawView */,
 				6407E6FD13FC2DE400DD9453 /* Button_FunAppDelegate.h */,
 				6407E6FE13FC2DE400DD9453 /* Button_FunAppDelegate.m */,
 				6407E70013FC2DE400DD9453 /* MainWindow.xib */,
@@ -155,6 +161,16 @@
 				6407E71913FC2DE400DD9453 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6407E72813FC442D00DD9453 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				6407E72913FC448600DD9453 /* DrawView.h */,
+				6407E72A13FC448600DD9453 /* DrawView.m */,
+				6407E72B13FC448600DD9453 /* DrawView.xib */,
+			);
+			name = DrawView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +243,7 @@
 				6407E6F913FC2DE400DD9453 /* InfoPlist.strings in Resources */,
 				6407E70213FC2DE400DD9453 /* MainWindow.xib in Resources */,
 				6407E70813FC2DE400DD9453 /* Button_FunViewController.xib in Resources */,
+				6407E72D13FC448600DD9453 /* DrawView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +282,7 @@
 				6407E6FB13FC2DE400DD9453 /* main.m in Sources */,
 				6407E6FF13FC2DE400DD9453 /* Button_FunAppDelegate.m in Sources */,
 				6407E70513FC2DE400DD9453 /* Button_FunViewController.m in Sources */,
+				6407E72C13FC448600DD9453 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
