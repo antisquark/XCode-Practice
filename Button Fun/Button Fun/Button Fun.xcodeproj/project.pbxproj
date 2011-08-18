@@ -23,8 +23,14 @@
 		6407E71B13FC2DE400DD9453 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6407E71913FC2DE400DD9453 /* InfoPlist.strings */; };
 		6407E71D13FC2DE400DD9453 /* Button_FunTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6407E71C13FC2DE400DD9453 /* Button_FunTests.h */; };
 		6407E71F13FC2DE400DD9453 /* Button_FunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E71E13FC2DE400DD9453 /* Button_FunTests.m */; };
-		6407E72C13FC448600DD9453 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E72A13FC448600DD9453 /* DrawView.m */; };
-		6407E72D13FC448600DD9453 /* DrawView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6407E72B13FC448600DD9453 /* DrawView.xib */; };
+		6407E76413FC70AF00DD9453 /* FCGraphicsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E75313FC70AF00DD9453 /* FCGraphicsAPI.m */; };
+		6407E76513FC70AF00DD9453 /* FCBitmapStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E75713FC70AF00DD9453 /* FCBitmapStyle.m */; };
+		6407E76613FC70AF00DD9453 /* FCGradientStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E75A13FC70AF00DD9453 /* FCGradientStyle.m */; };
+		6407E76713FC70AF00DD9453 /* FCComplexCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E75E13FC70AF00DD9453 /* FCComplexCorner.m */; };
+		6407E76813FC70AF00DD9453 /* FCRectangleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76013FC70AF00DD9453 /* FCRectangleStyle.m */; };
+		6407E76913FC70AF00DD9453 /* FCShapeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76313FC70AF00DD9453 /* FCShapeStyle.m */; };
+		6407E76D13FC71B200DD9453 /* DrawButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76C13FC71B200DD9453 /* DrawButton.m */; };
+		6407E77013FC743C00DD9453 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76F13FC743C00DD9453 /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +64,22 @@
 		6407E71A13FC2DE400DD9453 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6407E71C13FC2DE400DD9453 /* Button_FunTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button_FunTests.h; sourceTree = "<group>"; };
 		6407E71E13FC2DE400DD9453 /* Button_FunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button_FunTests.m; sourceTree = "<group>"; };
-		6407E72913FC448600DD9453 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
-		6407E72A13FC448600DD9453 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
-		6407E72B13FC448600DD9453 /* DrawView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawView.xib; sourceTree = "<group>"; };
+		6407E75213FC70AF00DD9453 /* FCGraphicsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGraphicsAPI.h; sourceTree = "<group>"; };
+		6407E75313FC70AF00DD9453 /* FCGraphicsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCGraphicsAPI.m; sourceTree = "<group>"; };
+		6407E75613FC70AF00DD9453 /* FCBitmapStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBitmapStyle.h; sourceTree = "<group>"; };
+		6407E75713FC70AF00DD9453 /* FCBitmapStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBitmapStyle.m; sourceTree = "<group>"; };
+		6407E75913FC70AF00DD9453 /* FCGradientStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGradientStyle.h; sourceTree = "<group>"; };
+		6407E75A13FC70AF00DD9453 /* FCGradientStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCGradientStyle.m; sourceTree = "<group>"; };
+		6407E75D13FC70AF00DD9453 /* FCComplexCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCComplexCorner.h; sourceTree = "<group>"; };
+		6407E75E13FC70AF00DD9453 /* FCComplexCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCComplexCorner.m; sourceTree = "<group>"; };
+		6407E75F13FC70AF00DD9453 /* FCRectangleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCRectangleStyle.h; sourceTree = "<group>"; };
+		6407E76013FC70AF00DD9453 /* FCRectangleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCRectangleStyle.m; sourceTree = "<group>"; };
+		6407E76213FC70AF00DD9453 /* FCShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShapeStyle.h; sourceTree = "<group>"; };
+		6407E76313FC70AF00DD9453 /* FCShapeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShapeStyle.m; sourceTree = "<group>"; };
+		6407E76B13FC71B200DD9453 /* DrawButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawButton.h; sourceTree = "<group>"; };
+		6407E76C13FC71B200DD9453 /* DrawButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawButton.m; sourceTree = "<group>"; };
+		6407E76E13FC743C00DD9453 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawView.h; path = DrawView/DrawView.h; sourceTree = "<group>"; };
+		6407E76F13FC743C00DD9453 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawView.m; path = DrawView/DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +140,8 @@
 		6407E6F413FC2DE400DD9453 /* Button Fun */ = {
 			isa = PBXGroup;
 			children = (
+				6407E76A13FC717000DD9453 /* DrawButton */,
+				6407E75113FC70AF00DD9453 /* FCGraphicsAPI */,
 				6407E72813FC442D00DD9453 /* DrawView */,
 				6407E6FD13FC2DE400DD9453 /* Button_FunAppDelegate.h */,
 				6407E6FE13FC2DE400DD9453 /* Button_FunAppDelegate.m */,
@@ -166,11 +187,86 @@
 		6407E72813FC442D00DD9453 /* DrawView */ = {
 			isa = PBXGroup;
 			children = (
-				6407E72913FC448600DD9453 /* DrawView.h */,
-				6407E72A13FC448600DD9453 /* DrawView.m */,
-				6407E72B13FC448600DD9453 /* DrawView.xib */,
+				6407E76E13FC743C00DD9453 /* DrawView.h */,
+				6407E76F13FC743C00DD9453 /* DrawView.m */,
 			);
 			name = DrawView;
+			sourceTree = "<group>";
+		};
+		6407E75113FC70AF00DD9453 /* FCGraphicsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75213FC70AF00DD9453 /* FCGraphicsAPI.h */,
+				6407E75313FC70AF00DD9453 /* FCGraphicsAPI.m */,
+				6407E75413FC70AF00DD9453 /* Styles */,
+			);
+			path = FCGraphicsAPI;
+			sourceTree = "<group>";
+		};
+		6407E75413FC70AF00DD9453 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75513FC70AF00DD9453 /* FCBitmapStyle */,
+				6407E75813FC70AF00DD9453 /* FCGradientStyle */,
+				6407E75B13FC70AF00DD9453 /* FCRectangleStyle */,
+				6407E76113FC70AF00DD9453 /* FCShapeStyle */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		6407E75513FC70AF00DD9453 /* FCBitmapStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75613FC70AF00DD9453 /* FCBitmapStyle.h */,
+				6407E75713FC70AF00DD9453 /* FCBitmapStyle.m */,
+			);
+			path = FCBitmapStyle;
+			sourceTree = "<group>";
+		};
+		6407E75813FC70AF00DD9453 /* FCGradientStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75913FC70AF00DD9453 /* FCGradientStyle.h */,
+				6407E75A13FC70AF00DD9453 /* FCGradientStyle.m */,
+			);
+			path = FCGradientStyle;
+			sourceTree = "<group>";
+		};
+		6407E75B13FC70AF00DD9453 /* FCRectangleStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75C13FC70AF00DD9453 /* FCComplexCorner */,
+				6407E75F13FC70AF00DD9453 /* FCRectangleStyle.h */,
+				6407E76013FC70AF00DD9453 /* FCRectangleStyle.m */,
+			);
+			path = FCRectangleStyle;
+			sourceTree = "<group>";
+		};
+		6407E75C13FC70AF00DD9453 /* FCComplexCorner */ = {
+			isa = PBXGroup;
+			children = (
+				6407E75D13FC70AF00DD9453 /* FCComplexCorner.h */,
+				6407E75E13FC70AF00DD9453 /* FCComplexCorner.m */,
+			);
+			path = FCComplexCorner;
+			sourceTree = "<group>";
+		};
+		6407E76113FC70AF00DD9453 /* FCShapeStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6407E76213FC70AF00DD9453 /* FCShapeStyle.h */,
+				6407E76313FC70AF00DD9453 /* FCShapeStyle.m */,
+			);
+			path = FCShapeStyle;
+			sourceTree = "<group>";
+		};
+		6407E76A13FC717000DD9453 /* DrawButton */ = {
+			isa = PBXGroup;
+			children = (
+				6407E76B13FC71B200DD9453 /* DrawButton.h */,
+				6407E76C13FC71B200DD9453 /* DrawButton.m */,
+			);
+			name = DrawButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +339,6 @@
 				6407E6F913FC2DE400DD9453 /* InfoPlist.strings in Resources */,
 				6407E70213FC2DE400DD9453 /* MainWindow.xib in Resources */,
 				6407E70813FC2DE400DD9453 /* Button_FunViewController.xib in Resources */,
-				6407E72D13FC448600DD9453 /* DrawView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +377,14 @@
 				6407E6FB13FC2DE400DD9453 /* main.m in Sources */,
 				6407E6FF13FC2DE400DD9453 /* Button_FunAppDelegate.m in Sources */,
 				6407E70513FC2DE400DD9453 /* Button_FunViewController.m in Sources */,
-				6407E72C13FC448600DD9453 /* DrawView.m in Sources */,
+				6407E76413FC70AF00DD9453 /* FCGraphicsAPI.m in Sources */,
+				6407E76513FC70AF00DD9453 /* FCBitmapStyle.m in Sources */,
+				6407E76613FC70AF00DD9453 /* FCGradientStyle.m in Sources */,
+				6407E76713FC70AF00DD9453 /* FCComplexCorner.m in Sources */,
+				6407E76813FC70AF00DD9453 /* FCRectangleStyle.m in Sources */,
+				6407E76913FC70AF00DD9453 /* FCShapeStyle.m in Sources */,
+				6407E76D13FC71B200DD9453 /* DrawButton.m in Sources */,
+				6407E77013FC743C00DD9453 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,16 +11,9 @@
 
 @implementation Button_FunViewController
 
-@synthesize statusText;
+@synthesize statusLabel;
 
-- (IBAction)buttonPressed:(id)sender
-{
-    NSString *title = [sender titleForState:UIControlStateNormal];
-    NSString *newText = [[NSString alloc] initWithFormat:
-                         @"%@ button pressed.", title];
-    statusText.text = newText;
-    [newText release];
-}
+
 
 
 - (void)didReceiveMemoryWarning
@@ -37,13 +30,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DrawView *bView = [[DrawView alloc] initWithFrame:CGRectMake(100,100,100,100)];
+    DrawView *bView = [[DrawView alloc] initWithFrame:CGRectMake(0,0,768,1024)];   
+    [self.view addSubview:bView];
 }
 
 
 
 //ISAAC: I'm assuming this replaces the definition of -(void)dealloc referred to on 38 of beginning Iphone development
-//isaac: WRONG you must add a dealloc method.
+//ISAAC: WRONG you must add a dealloc method.
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -59,7 +53,7 @@
 
 - (void)dealloc
 {
-    [statusText release];
+    [statusLabel release];
     [super dealloc];
 }
 

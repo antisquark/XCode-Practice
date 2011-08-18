@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrawView : UIView
-
+@interface DrawView : UIView {
+    UILabel *statusLabel;
+}
+- (void)buttonPressed:(id)sender;
 @end

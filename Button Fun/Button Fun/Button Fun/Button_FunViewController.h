@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface Button_FunViewController : UIViewController {
-    IBOutlet UILabel *statusText;
+    //IBOutlet UILabel *statusText;
+    //UILabel *statusLabel;  //ISAAC: moving this under the DrawView.h
 }
-@property (retain, nonatomic) UILabel *statusText;
+@property (retain, nonatomic) UILabel *statusLabel;
 
-- (IBAction)buttonPressed:(id)sender;
+//- (IBAction)buttonPressed:(id)sender; //this was still working, but should be in the header of the class implementing it..
 
 @end
