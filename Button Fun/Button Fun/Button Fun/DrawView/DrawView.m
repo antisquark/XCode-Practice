@@ -8,10 +8,16 @@
 
 #import "DrawView.h"
 #import "DrawButton.h"
+#import "DrawLabel.h"
 #import "FCShapeStyle.h"
 #import "FCRectangleStyle.h"
 
+//Ahmed suggests using the UIScreen element to get info about the dimensions etc.
+#define IPAD_MAX_WIDTH = 768;
+#define IPAD_MAX_HEIGHT = 1024;
+
 @implementation DrawView
+@synthesize statusLabel;
 
 - (void)buttonPressed:(id)sender
 {
@@ -46,9 +52,11 @@
         left.frame = CGRectMake(100, 500, 200, 60);
         left.buttonStyle = rectangleStyle; 
         [left setTitle:@"Left" forState:UIControlStateNormal];
-        //this is the tricky bit!! Note target is DrawView, and that buttonPressed takes and arg, so you have to include the ':'
+        /* 
+         This is the tricky bit!! Note target is DrawView, and that buttonPressed takes and arg, so you have to include the ':'
+         note also that because DrawButton inherits from UIButton it has the 'addtarget' method
+        */
         [left addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        
         
         
         //right
@@ -56,18 +64,20 @@
         right.frame = CGRectMake(400, 500, 200, 80);
         right.buttonStyle = rectangleStyle;
         [right setTitle:@"Right" forState:UIControlStateNormal];
-        /* 
-         The tricky bit again, note also that because DrawButton inherits from UIButton it has the 'addtarget' method
-         */
         [right addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         
         CGRect labelRect = CGRectMake(200, 700, 300, 80);
-        statusLabel = [[UILabel alloc]initWithFrame:labelRect];
-        statusLabel.textColor = [UIColor redColor];
+        //statusLabel = [[UILabel alloc]initWithFrame:labelRect];
+        statusLabel = [[DrawLabel alloc]initWithFrame:labelRect];
+        [statusLabel setBackgroundColor:[UIColor clearColor]];  //set the label's background to clear.
+        //self.backgroundColor = [UIColor blueColor]; //is the background clear?
+        statusLabel.labelStyle = rectangleStyle;
+        
+        statusLabel.textColor = [UIColor blueColor];
         statusLabel.textAlignment = UITextAlignmentCenter; //not sure about this syntax..
         statusLabel.font = [UIFont boldSystemFontOfSize:30];
+        //statusLabel.minimumFontSize = 9; //allows the text to resize to fit if possible.
         statusLabel.text = defaultText;
-        
         [self addSubview:left];
         [self addSubview:right];
         [self addSubview:statusLabel];
@@ -83,5 +93,12 @@
     // Drawing code
 }
 */
+
+//not sure if this is the right place for statusLabel dealloc--> ASK
+-(void)dealloc
+{
+    [statusLabel release];
+    [super dealloc];        //will this interfere with the ViewController dealloc?
+}
 
 @end

@@ -30,4 +30,7 @@
     [FCGraphicsAPI drawRect:rect withStyle:buttonStyle context:currentContext];
 }
 
+
+//should I add code to dealloc the buttonStyle here, or does that happen as part of dealloc-ing these objects?
+
 @end

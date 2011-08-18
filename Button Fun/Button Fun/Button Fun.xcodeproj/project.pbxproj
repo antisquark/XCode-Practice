@@ -31,6 +31,7 @@
 		6407E76913FC70AF00DD9453 /* FCShapeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76313FC70AF00DD9453 /* FCShapeStyle.m */; };
 		6407E76D13FC71B200DD9453 /* DrawButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76C13FC71B200DD9453 /* DrawButton.m */; };
 		6407E77013FC743C00DD9453 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E76F13FC743C00DD9453 /* DrawView.m */; };
+		6407E77A13FC918F00DD9453 /* DrawLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407E77913FC918F00DD9453 /* DrawLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		6407E76C13FC71B200DD9453 /* DrawButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawButton.m; sourceTree = "<group>"; };
 		6407E76E13FC743C00DD9453 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawView.h; path = DrawView/DrawView.h; sourceTree = "<group>"; };
 		6407E76F13FC743C00DD9453 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawView.m; path = DrawView/DrawView.m; sourceTree = "<group>"; };
+		6407E77813FC918F00DD9453 /* DrawLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawLabel.h; path = DrawLabel/DrawLabel.h; sourceTree = "<group>"; };
+		6407E77913FC918F00DD9453 /* DrawLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawLabel.m; path = DrawLabel/DrawLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 		6407E6F413FC2DE400DD9453 /* Button Fun */ = {
 			isa = PBXGroup;
 			children = (
+				6407E77113FC8E9500DD9453 /* DrawLabel */,
 				6407E76A13FC717000DD9453 /* DrawButton */,
 				6407E75113FC70AF00DD9453 /* FCGraphicsAPI */,
 				6407E72813FC442D00DD9453 /* DrawView */,
@@ -269,6 +273,15 @@
 			name = DrawButton;
 			sourceTree = "<group>";
 		};
+		6407E77113FC8E9500DD9453 /* DrawLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6407E77813FC918F00DD9453 /* DrawLabel.h */,
+				6407E77913FC918F00DD9453 /* DrawLabel.m */,
+			);
+			name = DrawLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +398,7 @@
 				6407E76913FC70AF00DD9453 /* FCShapeStyle.m in Sources */,
 				6407E76D13FC71B200DD9453 /* DrawButton.m in Sources */,
 				6407E77013FC743C00DD9453 /* DrawView.m in Sources */,
+				6407E77A13FC918F00DD9453 /* DrawLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

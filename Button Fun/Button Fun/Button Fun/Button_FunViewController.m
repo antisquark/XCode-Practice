@@ -11,7 +11,7 @@
 
 @implementation Button_FunViewController
 
-@synthesize statusLabel;
+//@synthesize statusLabel; //this should be under DrawView.m
 
 
 
@@ -53,7 +53,7 @@
 
 - (void)dealloc
 {
-    [statusLabel release];
+    //[statusLabel release]; //should ALSO be in DrawView.m
     [super dealloc];
 }
 

@@ -12,7 +12,7 @@
     //IBOutlet UILabel *statusText;
     //UILabel *statusLabel;  //ISAAC: moving this under the DrawView.h
 }
-@property (retain, nonatomic) UILabel *statusLabel;
+//@property (retain, nonatomic) UILabel *statusLabel; // this should be under DrawView.h
 
 //- (IBAction)buttonPressed:(id)sender; //this was still working, but should be in the header of the class implementing it..
 
