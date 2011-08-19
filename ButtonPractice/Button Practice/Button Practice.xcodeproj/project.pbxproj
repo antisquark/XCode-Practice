@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B4E85513FDC8D4009B0B1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85413FDC8D4009B0B1E /* UIKit.framework */; };
+		64B4E85713FDC8D4009B0B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85613FDC8D4009B0B1E /* Foundation.framework */; };
+		64B4E85913FDC8D4009B0B1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85813FDC8D4009B0B1E /* CoreGraphics.framework */; };
+		64B4E85F13FDC8D4009B0B1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64B4E85D13FDC8D4009B0B1E /* InfoPlist.strings */; };
+		64B4E86113FDC8D4009B0B1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E86013FDC8D4009B0B1E /* main.m */; };
+		64B4E86513FDC8D4009B0B1E /* Button_PracticeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E86413FDC8D4009B0B1E /* Button_PracticeAppDelegate.m */; };
+		64B4E86813FDC8D4009B0B1E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B4E86613FDC8D4009B0B1E /* MainWindow.xib */; };
+		64B4E86B13FDC8D4009B0B1E /* Button_PracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E86A13FDC8D4009B0B1E /* Button_PracticeViewController.m */; };
+		64B4E86E13FDC8D4009B0B1E /* Button_PracticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B4E86C13FDC8D4009B0B1E /* Button_PracticeViewController.xib */; };
+		64B4E87613FDC8D4009B0B1E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E87513FDC8D4009B0B1E /* SenTestingKit.framework */; };
+		64B4E87713FDC8D4009B0B1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85413FDC8D4009B0B1E /* UIKit.framework */; };
+		64B4E87813FDC8D4009B0B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85613FDC8D4009B0B1E /* Foundation.framework */; };
+		64B4E87913FDC8D4009B0B1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B4E85813FDC8D4009B0B1E /* CoreGraphics.framework */; };
+		64B4E88113FDC8D4009B0B1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64B4E87F13FDC8D4009B0B1E /* InfoPlist.strings */; };
+		64B4E88313FDC8D4009B0B1E /* Button_PracticeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 64B4E88213FDC8D4009B0B1E /* Button_PracticeTests.h */; };
+		64B4E88513FDC8D4009B0B1E /* Button_PracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B4E88413FDC8D4009B0B1E /* Button_PracticeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64B4E87A13FDC8D4009B0B1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64B4E84713FDC8D4009B0B1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64B4E84F13FDC8D4009B0B1E;
+			remoteInfo = "Button Practice";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64B4E85013FDC8D4009B0B1E /* Button Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Button Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B4E85413FDC8D4009B0B1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64B4E85613FDC8D4009B0B1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64B4E85813FDC8D4009B0B1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64B4E85C13FDC8D4009B0B1E /* Button Practice-Info.plist */ = {isa = PBXFileReference; path = "Button Practice-Info.plist"; sourceTree = "<group>"; };
+		64B4E85E13FDC8D4009B0B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64B4E86013FDC8D4009B0B1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64B4E86213FDC8D4009B0B1E /* Button Practice-Prefix.pch */ = {isa = PBXFileReference; path = "Button Practice-Prefix.pch"; sourceTree = "<group>"; };
+		64B4E86313FDC8D4009B0B1E /* Button_PracticeAppDelegate.h */ = {isa = PBXFileReference; path = Button_PracticeAppDelegate.h; sourceTree = "<group>"; };
+		64B4E86413FDC8D4009B0B1E /* Button_PracticeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button_PracticeAppDelegate.m; sourceTree = "<group>"; };
+		64B4E86713FDC8D4009B0B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		64B4E86913FDC8D4009B0B1E /* Button_PracticeViewController.h */ = {isa = PBXFileReference; path = Button_PracticeViewController.h; sourceTree = "<group>"; };
+		64B4E86A13FDC8D4009B0B1E /* Button_PracticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button_PracticeViewController.m; sourceTree = "<group>"; };
+		64B4E86D13FDC8D4009B0B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Button_PracticeViewController.xib; sourceTree = "<group>"; };
+		64B4E87413FDC8D4009B0B1E /* Button PracticeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Button PracticeTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B4E87513FDC8D4009B0B1E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64B4E87E13FDC8D4009B0B1E /* Button PracticeTests-Info.plist */ = {isa = PBXFileReference; path = "Button PracticeTests-Info.plist"; sourceTree = "<group>"; };
+		64B4E88013FDC8D4009B0B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64B4E88213FDC8D4009B0B1E /* Button_PracticeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button_PracticeTests.h; sourceTree = "<group>"; };
+		64B4E88413FDC8D4009B0B1E /* Button_PracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button_PracticeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64B4E84D13FDC8D4009B0B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E85513FDC8D4009B0B1E /* UIKit.framework in Frameworks */,
+				64B4E85713FDC8D4009B0B1E /* Foundation.framework in Frameworks */,
+				64B4E85913FDC8D4009B0B1E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B4E87013FDC8D4009B0B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E87613FDC8D4009B0B1E /* SenTestingKit.framework in Frameworks */,
+				64B4E87713FDC8D4009B0B1E /* UIKit.framework in Frameworks */,
+				64B4E87813FDC8D4009B0B1E /* Foundation.framework in Frameworks */,
+				64B4E87913FDC8D4009B0B1E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64B4E84513FDC8D4009B0B1E = {
+			isa = PBXGroup;
+			children = (
+				64B4E85A13FDC8D4009B0B1E /* Button Practice */,
+				64B4E87C13FDC8D4009B0B1E /* Button PracticeTests */,
+				64B4E85313FDC8D4009B0B1E /* Frameworks */,
+				64B4E85113FDC8D4009B0B1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64B4E85113FDC8D4009B0B1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E85013FDC8D4009B0B1E /* Button Practice.app */,
+				64B4E87413FDC8D4009B0B1E /* Button PracticeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64B4E85313FDC8D4009B0B1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E85413FDC8D4009B0B1E /* UIKit.framework */,
+				64B4E85613FDC8D4009B0B1E /* Foundation.framework */,
+				64B4E85813FDC8D4009B0B1E /* CoreGraphics.framework */,
+				64B4E87513FDC8D4009B0B1E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64B4E85A13FDC8D4009B0B1E /* Button Practice */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E86313FDC8D4009B0B1E /* Button_PracticeAppDelegate.h */,
+				64B4E86413FDC8D4009B0B1E /* Button_PracticeAppDelegate.m */,
+				64B4E86613FDC8D4009B0B1E /* MainWindow.xib */,
+				64B4E86913FDC8D4009B0B1E /* Button_PracticeViewController.h */,
+				64B4E86A13FDC8D4009B0B1E /* Button_PracticeViewController.m */,
+				64B4E86C13FDC8D4009B0B1E /* Button_PracticeViewController.xib */,
+				64B4E85B13FDC8D4009B0B1E /* Supporting Files */,
+			);
+			path = "Button Practice";
+			sourceTree = "<group>";
+		};
+		64B4E85B13FDC8D4009B0B1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E85C13FDC8D4009B0B1E /* Button Practice-Info.plist */,
+				64B4E85D13FDC8D4009B0B1E /* InfoPlist.strings */,
+				64B4E86013FDC8D4009B0B1E /* main.m */,
+				64B4E86213FDC8D4009B0B1E /* Button Practice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64B4E87C13FDC8D4009B0B1E /* Button PracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E88213FDC8D4009B0B1E /* Button_PracticeTests.h */,
+				64B4E88413FDC8D4009B0B1E /* Button_PracticeTests.m */,
+				64B4E87D13FDC8D4009B0B1E /* Supporting Files */,
+			);
+			path = "Button PracticeTests";
+			sourceTree = "<group>";
+		};
+		64B4E87D13FDC8D4009B0B1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B4E87E13FDC8D4009B0B1E /* Button PracticeTests-Info.plist */,
+				64B4E87F13FDC8D4009B0B1E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64B4E84F13FDC8D4009B0B1E /* Button Practice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B4E88813FDC8D4009B0B1E /* Build configuration list for PBXNativeTarget "Button Practice" */;
+			buildPhases = (
+				64B4E84C13FDC8D4009B0B1E /* Sources */,
+				64B4E84D13FDC8D4009B0B1E /* Frameworks */,
+				64B4E84E13FDC8D4009B0B1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Button Practice";
+			productName = "Button Practice";
+			productReference = 64B4E85013FDC8D4009B0B1E /* Button Practice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64B4E87313FDC8D4009B0B1E /* Button PracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64B4E88B13FDC8D4009B0B1E /* Build configuration list for PBXNativeTarget "Button PracticeTests" */;
+			buildPhases = (
+				64B4E86F13FDC8D4009B0B1E /* Sources */,
+				64B4E87013FDC8D4009B0B1E /* Frameworks */,
+				64B4E87113FDC8D4009B0B1E /* Resources */,
+				64B4E87213FDC8D4009B0B1E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64B4E87B13FDC8D4009B0B1E /* PBXTargetDependency */,
+			);
+			name = "Button PracticeTests";
+			productName = "Button PracticeTests";
+			productReference = 64B4E87413FDC8D4009B0B1E /* Button PracticeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64B4E84713FDC8D4009B0B1E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 64B4E84A13FDC8D4009B0B1E /* Build configuration list for PBXProject "Button Practice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64B4E84513FDC8D4009B0B1E;
+			productRefGroup = 64B4E85113FDC8D4009B0B1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64B4E84F13FDC8D4009B0B1E /* Button Practice */,
+				64B4E87313FDC8D4009B0B1E /* Button PracticeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64B4E84E13FDC8D4009B0B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E85F13FDC8D4009B0B1E /* InfoPlist.strings in Resources */,
+				64B4E86813FDC8D4009B0B1E /* MainWindow.xib in Resources */,
+				64B4E86E13FDC8D4009B0B1E /* Button_PracticeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B4E87113FDC8D4009B0B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E88113FDC8D4009B0B1E /* InfoPlist.strings in Resources */,
+				64B4E88313FDC8D4009B0B1E /* Button_PracticeTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64B4E87213FDC8D4009B0B1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64B4E84C13FDC8D4009B0B1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E86113FDC8D4009B0B1E /* main.m in Sources */,
+				64B4E86513FDC8D4009B0B1E /* Button_PracticeAppDelegate.m in Sources */,
+				64B4E86B13FDC8D4009B0B1E /* Button_PracticeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64B4E86F13FDC8D4009B0B1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B4E88513FDC8D4009B0B1E /* Button_PracticeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64B4E87B13FDC8D4009B0B1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64B4E84F13FDC8D4009B0B1E /* Button Practice */;
+			targetProxy = 64B4E87A13FDC8D4009B0B1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64B4E85D13FDC8D4009B0B1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B4E85E13FDC8D4009B0B1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64B4E86613FDC8D4009B0B1E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B4E86713FDC8D4009B0B1E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		64B4E86C13FDC8D4009B0B1E /* Button_PracticeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B4E86D13FDC8D4009B0B1E /* en */,
+			);
+			name = Button_PracticeViewController.xib;
+			sourceTree = "<group>";
+		};
+		64B4E87F13FDC8D4009B0B1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64B4E88013FDC8D4009B0B1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64B4E88613FDC8D4009B0B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		64B4E88713FDC8D4009B0B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64B4E88913FDC8D4009B0B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Button Practice/Button Practice-Prefix.pch";
+				INFOPLIST_FILE = "Button Practice/Button Practice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64B4E88A13FDC8D4009B0B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Button Practice/Button Practice-Prefix.pch";
+				INFOPLIST_FILE = "Button Practice/Button Practice-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64B4E88C13FDC8D4009B0B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Button Practice.app/Button Practice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Button Practice/Button Practice-Prefix.pch";
+				INFOPLIST_FILE = "Button PracticeTests/Button PracticeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		64B4E88D13FDC8D4009B0B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Button Practice.app/Button Practice";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Button Practice/Button Practice-Prefix.pch";
+				INFOPLIST_FILE = "Button PracticeTests/Button PracticeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64B4E84A13FDC8D4009B0B1E /* Build configuration list for PBXProject "Button Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B4E88613FDC8D4009B0B1E /* Debug */,
+				64B4E88713FDC8D4009B0B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64B4E88813FDC8D4009B0B1E /* Build configuration list for PBXNativeTarget "Button Practice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B4E88913FDC8D4009B0B1E /* Debug */,
+				64B4E88A13FDC8D4009B0B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64B4E88B13FDC8D4009B0B1E /* Build configuration list for PBXNativeTarget "Button PracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B4E88C13FDC8D4009B0B1E /* Debug */,
+				64B4E88D13FDC8D4009B0B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64B4E84713FDC8D4009B0B1E /* Project object */;
+}

@@ -77,8 +77,8 @@
 		6407E76013FC70AF00DD9453 /* FCRectangleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCRectangleStyle.m; sourceTree = "<group>"; };
 		6407E76213FC70AF00DD9453 /* FCShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShapeStyle.h; sourceTree = "<group>"; };
 		6407E76313FC70AF00DD9453 /* FCShapeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShapeStyle.m; sourceTree = "<group>"; };
-		6407E76B13FC71B200DD9453 /* DrawButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawButton.h; sourceTree = "<group>"; };
-		6407E76C13FC71B200DD9453 /* DrawButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawButton.m; sourceTree = "<group>"; };
+		6407E76B13FC71B200DD9453 /* DrawButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawButton.h; path = DrawButton/DrawButton.h; sourceTree = "<group>"; };
+		6407E76C13FC71B200DD9453 /* DrawButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawButton.m; path = DrawButton/DrawButton.m; sourceTree = "<group>"; };
 		6407E76E13FC743C00DD9453 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawView.h; path = DrawView/DrawView.h; sourceTree = "<group>"; };
 		6407E76F13FC743C00DD9453 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawView.m; path = DrawView/DrawView.m; sourceTree = "<group>"; };
 		6407E77813FC918F00DD9453 /* DrawLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawLabel.h; path = DrawLabel/DrawLabel.h; sourceTree = "<group>"; };
@@ -578,6 +578,7 @@
 				6407E72413FC2DE400DD9453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6407E72513FC2DE400DD9453 /* Build configuration list for PBXNativeTarget "Button FunTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +587,7 @@
 				6407E72713FC2DE400DD9453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
