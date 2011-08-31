@@ -23,6 +23,39 @@
 		6412D42014042BA300E1E9B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6412D41E14042BA300E1E9B9 /* InfoPlist.strings */; };
 		6412D42214042BA300E1E9B9 /* View_PracticeTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 6412D42114042BA300E1E9B9 /* View_PracticeTests.h */; };
 		6412D42414042BA300E1E9B9 /* View_PracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D42314042BA300E1E9B9 /* View_PracticeTests.m */; };
+		6412D42F14042BDD00E1E9B9 /* UIViewGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D42E14042BDD00E1E9B9 /* UIViewGradient.m */; };
+		6412D43314042C6B00E1E9B9 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D43214042C6B00E1E9B9 /* DrawView.m */; };
+		6412D44B14042DCD00E1E9B9 /* FCGraphicsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D43A14042DCD00E1E9B9 /* FCGraphicsAPI.m */; };
+		6412D44C14042DCD00E1E9B9 /* FCBitmapStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D43E14042DCD00E1E9B9 /* FCBitmapStyle.m */; };
+		6412D44D14042DCD00E1E9B9 /* FCGradientStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D44114042DCD00E1E9B9 /* FCGradientStyle.m */; };
+		6412D44E14042DCD00E1E9B9 /* FCComplexCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D44514042DCD00E1E9B9 /* FCComplexCorner.m */; };
+		6412D44F14042DCD00E1E9B9 /* FCRectangleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D44714042DCD00E1E9B9 /* FCRectangleStyle.m */; };
+		6412D45014042DCD00E1E9B9 /* FCShapeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6412D44A14042DCD00E1E9B9 /* FCShapeStyle.m */; };
+		64A7164914043496008000BC /* UIView3Mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7164814043496008000BC /* UIView3Mode.m */; };
+		64A71669140466F9008000BC /* FCReverseRoundedCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71668140466F9008000BC /* FCReverseRoundedCornersView.m */; };
+		64A716761405C78F008000BC /* FCCheckInCaptionBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716751405C78F008000BC /* FCCheckInCaptionBg.m */; };
+		64A716801405D21D008000BC /* FCButtonBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7167F1405D21D008000BC /* FCButtonBg.m */; };
+		64A716841405D6E4008000BC /* FCCheckInDetailsBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716831405D6E4008000BC /* FCCheckInDetailsBg.m */; };
+		64A716881405DBBD008000BC /* FCConfirmationBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716871405DBBD008000BC /* FCConfirmationBg.m */; };
+		64A716911406B231008000BC /* FCGrayOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716901406B231008000BC /* FCGrayOut.m */; };
+		64A716981406B622008000BC /* FCGrayText.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716971406B622008000BC /* FCGrayText.m */; };
+		64A7169C1406B8DF008000BC /* TwoLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7169B1406B8DF008000BC /* TwoLevelView.m */; };
+		64A716A71406C42B008000BC /* FCInviteBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716A61406C42B008000BC /* FCInviteBg.m */; };
+		64A716AA1406C992008000BC /* FCSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716A91406C992008000BC /* FCSignIn.m */; };
+		64A716AD1406CA78008000BC /* FCInviteNewBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716AC1406CA78008000BC /* FCInviteNewBg.m */; };
+		64A716B21406D072008000BC /* FCSignInLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716B11406D072008000BC /* FCSignInLabel.m */; };
+		64A716B61406D321008000BC /* FCStorePhotosZeroResultsBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716B51406D321008000BC /* FCStorePhotosZeroResultsBg.m */; };
+		64A716B81406ED0C008000BC /* checkInDetails_bkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A716B71406ED0C008000BC /* checkInDetails_bkgd.png */; };
+		64A716BC1406EDF6008000BC /* FCCustomTabsBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716BB1406EDF6008000BC /* FCCustomTabsBg.m */; };
+		64A716C514070AC4008000BC /* DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716C414070AC4008000BC /* DrawView2.m */; };
+		64A716CE14085721008000BC /* FCScrollableBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716CD14085721008000BC /* FCScrollableBg.m */; };
+		64A716D214087049008000BC /* FCDecalScrollableBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716D114087049008000BC /* FCDecalScrollableBg.m */; };
+		64A716D514087127008000BC /* JewelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716D414087125008000BC /* JewelView.m */; };
+		64A716DA140C0493008000BC /* FCPackageScrollableBg.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716D9140C0493008000BC /* FCPackageScrollableBg.m */; };
+		64A716E1140C46A5008000BC /* FCCircularProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716E0140C46A5008000BC /* FCCircularProgressIndicator.m */; };
+		64A716E5140D3FA2008000BC /* FCProgressStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716E4140D3FA2008000BC /* FCProgressStyle.m */; };
+		64A716E9140D5F1C008000BC /* FCFancyCircularProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716E8140D5F1C008000BC /* FCFancyCircularProgressIndicator.m */; };
+		64A716F0140DB578008000BC /* FCRaysView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A716EF140DB578008000BC /* FCRaysView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +73,87 @@
 		6412D3F314042BA200E1E9B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6412D3F514042BA200E1E9B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6412D3F714042BA200E1E9B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6412D3FB14042BA200E1E9B9 /* View Practice-Info.plist */ = {isa = PBXFileReference; path = "View Practice-Info.plist"; sourceTree = "<group>"; };
+		6412D3FB14042BA200E1E9B9 /* View Practice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "View Practice-Info.plist"; sourceTree = "<group>"; };
 		6412D3FD14042BA200E1E9B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6412D3FF14042BA200E1E9B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6412D40114042BA200E1E9B9 /* View Practice-Prefix.pch */ = {isa = PBXFileReference; path = "View Practice-Prefix.pch"; sourceTree = "<group>"; };
-		6412D40214042BA200E1E9B9 /* View_PracticeAppDelegate.h */ = {isa = PBXFileReference; path = View_PracticeAppDelegate.h; sourceTree = "<group>"; };
+		6412D40114042BA200E1E9B9 /* View Practice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "View Practice-Prefix.pch"; sourceTree = "<group>"; };
+		6412D40214042BA200E1E9B9 /* View_PracticeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_PracticeAppDelegate.h; sourceTree = "<group>"; };
 		6412D40314042BA200E1E9B9 /* View_PracticeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_PracticeAppDelegate.m; sourceTree = "<group>"; };
 		6412D40614042BA200E1E9B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		6412D40814042BA200E1E9B9 /* View_PracticeViewController.h */ = {isa = PBXFileReference; path = View_PracticeViewController.h; sourceTree = "<group>"; };
+		6412D40814042BA200E1E9B9 /* View_PracticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_PracticeViewController.h; sourceTree = "<group>"; };
 		6412D40914042BA200E1E9B9 /* View_PracticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_PracticeViewController.m; sourceTree = "<group>"; };
 		6412D40C14042BA200E1E9B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/View_PracticeViewController.xib; sourceTree = "<group>"; };
 		6412D41314042BA200E1E9B9 /* View PracticeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View PracticeTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6412D41414042BA200E1E9B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6412D41D14042BA300E1E9B9 /* View PracticeTests-Info.plist */ = {isa = PBXFileReference; path = "View PracticeTests-Info.plist"; sourceTree = "<group>"; };
+		6412D41D14042BA300E1E9B9 /* View PracticeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "View PracticeTests-Info.plist"; sourceTree = "<group>"; };
 		6412D41F14042BA300E1E9B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6412D42114042BA300E1E9B9 /* View_PracticeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View_PracticeTests.h; sourceTree = "<group>"; };
 		6412D42314042BA300E1E9B9 /* View_PracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_PracticeTests.m; sourceTree = "<group>"; };
+		6412D42D14042BDD00E1E9B9 /* UIViewGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewGradient.h; sourceTree = "<group>"; };
+		6412D42E14042BDD00E1E9B9 /* UIViewGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewGradient.m; sourceTree = "<group>"; };
+		6412D43114042C6B00E1E9B9 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		6412D43214042C6B00E1E9B9 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		6412D43914042DCD00E1E9B9 /* FCGraphicsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGraphicsAPI.h; sourceTree = "<group>"; };
+		6412D43A14042DCD00E1E9B9 /* FCGraphicsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCGraphicsAPI.m; sourceTree = "<group>"; };
+		6412D43D14042DCD00E1E9B9 /* FCBitmapStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBitmapStyle.h; sourceTree = "<group>"; };
+		6412D43E14042DCD00E1E9B9 /* FCBitmapStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBitmapStyle.m; sourceTree = "<group>"; };
+		6412D44014042DCD00E1E9B9 /* FCGradientStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGradientStyle.h; sourceTree = "<group>"; };
+		6412D44114042DCD00E1E9B9 /* FCGradientStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCGradientStyle.m; sourceTree = "<group>"; };
+		6412D44414042DCD00E1E9B9 /* FCComplexCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCComplexCorner.h; sourceTree = "<group>"; };
+		6412D44514042DCD00E1E9B9 /* FCComplexCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCComplexCorner.m; sourceTree = "<group>"; };
+		6412D44614042DCD00E1E9B9 /* FCRectangleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCRectangleStyle.h; sourceTree = "<group>"; };
+		6412D44714042DCD00E1E9B9 /* FCRectangleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCRectangleStyle.m; sourceTree = "<group>"; };
+		6412D44914042DCD00E1E9B9 /* FCShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShapeStyle.h; sourceTree = "<group>"; };
+		6412D44A14042DCD00E1E9B9 /* FCShapeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShapeStyle.m; sourceTree = "<group>"; };
+		64A7164714043496008000BC /* UIView3Mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIView3Mode.h; path = UIView3Mode/UIView3Mode.h; sourceTree = "<group>"; };
+		64A7164814043496008000BC /* UIView3Mode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIView3Mode.m; path = UIView3Mode/UIView3Mode.m; sourceTree = "<group>"; };
+		64A71667140466F9008000BC /* FCReverseRoundedCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCReverseRoundedCornersView.h; path = UIViewReverseRoundedCorners/FCReverseRoundedCornersView.h; sourceTree = "<group>"; };
+		64A71668140466F9008000BC /* FCReverseRoundedCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCReverseRoundedCornersView.m; path = UIViewReverseRoundedCorners/FCReverseRoundedCornersView.m; sourceTree = "<group>"; };
+		64A716741405C78F008000BC /* FCCheckInCaptionBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCheckInCaptionBg.h; path = CustomViews/FCCheckInCaptionBg/FCCheckInCaptionBg.h; sourceTree = "<group>"; };
+		64A716751405C78F008000BC /* FCCheckInCaptionBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCheckInCaptionBg.m; path = CustomViews/FCCheckInCaptionBg/FCCheckInCaptionBg.m; sourceTree = "<group>"; };
+		64A7167E1405D21D008000BC /* FCButtonBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCButtonBg.h; path = CustomViews/FCButtonBg/FCButtonBg.h; sourceTree = "<group>"; };
+		64A7167F1405D21D008000BC /* FCButtonBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCButtonBg.m; path = CustomViews/FCButtonBg/FCButtonBg.m; sourceTree = "<group>"; };
+		64A716821405D6E4008000BC /* FCCheckInDetailsBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCheckInDetailsBg.h; path = CustomViews/FCCheckInDetailsBg/FCCheckInDetailsBg.h; sourceTree = "<group>"; };
+		64A716831405D6E4008000BC /* FCCheckInDetailsBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCheckInDetailsBg.m; path = CustomViews/FCCheckInDetailsBg/FCCheckInDetailsBg.m; sourceTree = "<group>"; };
+		64A716861405DBBD008000BC /* FCConfirmationBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCConfirmationBg.h; path = CustomViews/FCConfirmationBg/FCConfirmationBg.h; sourceTree = "<group>"; };
+		64A716871405DBBD008000BC /* FCConfirmationBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCConfirmationBg.m; path = "/Users/igreenbride/XCode-Practice/View Practice/View Practice/View Practice/CustomViews/FCConfirmationBg/FCConfirmationBg.m"; sourceTree = "<absolute>"; };
+		64A7168F1406B231008000BC /* FCGrayOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGrayOut.h; path = CustomViews/FCGrayOut/FCGrayOut.h; sourceTree = "<group>"; };
+		64A716901406B231008000BC /* FCGrayOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGrayOut.m; path = CustomViews/FCGrayOut/FCGrayOut.m; sourceTree = "<group>"; };
+		64A716961406B622008000BC /* FCGrayText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGrayText.h; path = CustomViews/FCGrayText/FCGrayText.h; sourceTree = "<group>"; };
+		64A716971406B622008000BC /* FCGrayText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGrayText.m; path = CustomViews/FCGrayText/FCGrayText.m; sourceTree = "<group>"; };
+		64A7169A1406B8DF008000BC /* TwoLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwoLevelView.h; path = CustomViews/TwoLevelView/TwoLevelView.h; sourceTree = "<group>"; };
+		64A7169B1406B8DF008000BC /* TwoLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwoLevelView.m; path = CustomViews/TwoLevelView/TwoLevelView.m; sourceTree = "<group>"; };
+		64A716A51406C42B008000BC /* FCInviteBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCInviteBg.h; path = "View Practice/CustomViews/FCInvite/FCInviteBg.h"; sourceTree = SOURCE_ROOT; };
+		64A716A61406C42B008000BC /* FCInviteBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCInviteBg.m; path = "View Practice/CustomViews/FCInvite/FCInviteBg.m"; sourceTree = SOURCE_ROOT; };
+		64A716A81406C992008000BC /* FCSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSignIn.h; sourceTree = "<group>"; };
+		64A716A91406C992008000BC /* FCSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSignIn.m; sourceTree = "<group>"; };
+		64A716AB1406CA78008000BC /* FCInviteNewBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCInviteNewBg.h; path = CustomViews/FCInvite/FCInviteNewBg.h; sourceTree = "<group>"; };
+		64A716AC1406CA78008000BC /* FCInviteNewBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCInviteNewBg.m; path = CustomViews/FCInvite/FCInviteNewBg.m; sourceTree = "<group>"; };
+		64A716B01406D072008000BC /* FCSignInLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCSignInLabel.h; path = CustomViews/FCSignIn/FCSignInLabel.h; sourceTree = "<group>"; };
+		64A716B11406D072008000BC /* FCSignInLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCSignInLabel.m; path = CustomViews/FCSignIn/FCSignInLabel.m; sourceTree = "<group>"; };
+		64A716B41406D321008000BC /* FCStorePhotosZeroResultsBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCStorePhotosZeroResultsBg.h; path = CustomViews/FCStorePhotosZeroResultsBg/FCStorePhotosZeroResultsBg.h; sourceTree = "<group>"; };
+		64A716B51406D321008000BC /* FCStorePhotosZeroResultsBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCStorePhotosZeroResultsBg.m; path = CustomViews/FCStorePhotosZeroResultsBg/FCStorePhotosZeroResultsBg.m; sourceTree = "<group>"; };
+		64A716B71406ED0C008000BC /* checkInDetails_bkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkInDetails_bkgd.png; sourceTree = "<group>"; };
+		64A716BA1406EDF6008000BC /* FCCustomTabsBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCustomTabsBg.h; path = CustomViews/FCCustomTabsBg/FCCustomTabsBg.h; sourceTree = "<group>"; };
+		64A716BB1406EDF6008000BC /* FCCustomTabsBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCustomTabsBg.m; path = CustomViews/FCCustomTabsBg/FCCustomTabsBg.m; sourceTree = "<group>"; };
+		64A716C314070AC4008000BC /* DrawView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawView2.h; path = DrawView2/DrawView2.h; sourceTree = "<group>"; };
+		64A716C414070AC4008000BC /* DrawView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawView2.m; path = DrawView2/DrawView2.m; sourceTree = "<group>"; };
+		64A716CC14085721008000BC /* FCScrollableBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCScrollableBg.h; path = CustomViews/FCScrollableBg/FCScrollableBg.h; sourceTree = "<group>"; };
+		64A716CD14085721008000BC /* FCScrollableBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCScrollableBg.m; path = CustomViews/FCScrollableBg/FCScrollableBg.m; sourceTree = "<group>"; };
+		64A716D014087049008000BC /* FCDecalScrollableBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCDecalScrollableBg.h; path = CustomViews/FCScrollableBg/FCDecalScrollableBg/FCDecalScrollableBg.h; sourceTree = "<group>"; };
+		64A716D114087049008000BC /* FCDecalScrollableBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCDecalScrollableBg.m; path = CustomViews/FCScrollableBg/FCDecalScrollableBg/FCDecalScrollableBg.m; sourceTree = "<group>"; };
+		64A716D314087123008000BC /* JewelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JewelView.h; path = CustomViews/JewelButton/JewelView.h; sourceTree = "<group>"; };
+		64A716D414087125008000BC /* JewelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JewelView.m; path = CustomViews/JewelButton/JewelView.m; sourceTree = "<group>"; };
+		64A716D8140C0493008000BC /* FCPackageScrollableBg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCPackageScrollableBg.h; path = CustomViews/FCScrollableBg/FCPackageScrollableBg/FCPackageScrollableBg.h; sourceTree = "<group>"; };
+		64A716D9140C0493008000BC /* FCPackageScrollableBg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCPackageScrollableBg.m; path = CustomViews/FCScrollableBg/FCPackageScrollableBg/FCPackageScrollableBg.m; sourceTree = "<group>"; };
+		64A716DF140C46A5008000BC /* FCCircularProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCircularProgressIndicator.h; path = FCCircularProgressIndicator/FCCircularProgressIndicator.h; sourceTree = "<group>"; };
+		64A716E0140C46A5008000BC /* FCCircularProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCCircularProgressIndicator.m; path = FCCircularProgressIndicator/FCCircularProgressIndicator.m; sourceTree = "<group>"; };
+		64A716E3140D3FA2008000BC /* FCProgressStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCProgressStyle.h; path = Styles/FCProgressStyle/FCProgressStyle.h; sourceTree = "<group>"; };
+		64A716E4140D3FA2008000BC /* FCProgressStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCProgressStyle.m; path = Styles/FCProgressStyle/FCProgressStyle.m; sourceTree = "<group>"; };
+		64A716E7140D5F1C008000BC /* FCFancyCircularProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCFancyCircularProgressIndicator.h; path = CustomViews/FCFancyCircularProgressIndicator/FCFancyCircularProgressIndicator.h; sourceTree = "<group>"; };
+		64A716E8140D5F1C008000BC /* FCFancyCircularProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCFancyCircularProgressIndicator.m; path = CustomViews/FCFancyCircularProgressIndicator/FCFancyCircularProgressIndicator.m; sourceTree = "<group>"; };
+		64A716EE140DB578008000BC /* FCRaysView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCRaysView.h; path = CustomViews/FCRaysView/FCRaysView.h; sourceTree = "<group>"; };
+		64A716EF140DB578008000BC /* FCRaysView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCRaysView.m; path = CustomViews/FCRaysView/FCRaysView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +214,13 @@
 		6412D3F914042BA200E1E9B9 /* View Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6412D43814042DCD00E1E9B9 /* FCGraphicsAPI */,
+				6412D45214042E5200E1E9B9 /* DrawView */,
+				64A716C114070A86008000BC /* DrawView2 */,
+				64A716721405C751008000BC /* CustomViews */,
+				64A716631404667C008000BC /* FCReverseRoundedCornersView */,
+				64A716451404345C008000BC /* UIView3Mode */,
+				6412D43014042BEE00E1E9B9 /* UIViewGradient */,
 				6412D40214042BA200E1E9B9 /* View_PracticeAppDelegate.h */,
 				6412D40314042BA200E1E9B9 /* View_PracticeAppDelegate.m */,
 				6412D40514042BA200E1E9B9 /* MainWindow.xib */,
@@ -132,6 +237,7 @@
 			children = (
 				6412D3FB14042BA200E1E9B9 /* View Practice-Info.plist */,
 				6412D3FC14042BA200E1E9B9 /* InfoPlist.strings */,
+				64A716B71406ED0C008000BC /* checkInDetails_bkgd.png */,
 				6412D3FF14042BA200E1E9B9 /* main.m */,
 				6412D40114042BA200E1E9B9 /* View Practice-Prefix.pch */,
 			);
@@ -155,6 +261,337 @@
 				6412D41E14042BA300E1E9B9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6412D43014042BEE00E1E9B9 /* UIViewGradient */ = {
+			isa = PBXGroup;
+			children = (
+				6412D42D14042BDD00E1E9B9 /* UIViewGradient.h */,
+				6412D42E14042BDD00E1E9B9 /* UIViewGradient.m */,
+			);
+			name = UIViewGradient;
+			sourceTree = "<group>";
+		};
+		6412D43814042DCD00E1E9B9 /* FCGraphicsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6412D43914042DCD00E1E9B9 /* FCGraphicsAPI.h */,
+				6412D43A14042DCD00E1E9B9 /* FCGraphicsAPI.m */,
+				6412D43B14042DCD00E1E9B9 /* Styles */,
+			);
+			path = FCGraphicsAPI;
+			sourceTree = "<group>";
+		};
+		6412D43B14042DCD00E1E9B9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				64A716E2140D3F59008000BC /* FCProgressStyle */,
+				6412D43C14042DCD00E1E9B9 /* FCBitmapStyle */,
+				6412D43F14042DCD00E1E9B9 /* FCGradientStyle */,
+				6412D44214042DCD00E1E9B9 /* FCRectangleStyle */,
+				6412D44814042DCD00E1E9B9 /* FCShapeStyle */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		6412D43C14042DCD00E1E9B9 /* FCBitmapStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6412D43D14042DCD00E1E9B9 /* FCBitmapStyle.h */,
+				6412D43E14042DCD00E1E9B9 /* FCBitmapStyle.m */,
+			);
+			path = FCBitmapStyle;
+			sourceTree = "<group>";
+		};
+		6412D43F14042DCD00E1E9B9 /* FCGradientStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6412D44014042DCD00E1E9B9 /* FCGradientStyle.h */,
+				6412D44114042DCD00E1E9B9 /* FCGradientStyle.m */,
+			);
+			path = FCGradientStyle;
+			sourceTree = "<group>";
+		};
+		6412D44214042DCD00E1E9B9 /* FCRectangleStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6412D44314042DCD00E1E9B9 /* FCComplexCorner */,
+				6412D44614042DCD00E1E9B9 /* FCRectangleStyle.h */,
+				6412D44714042DCD00E1E9B9 /* FCRectangleStyle.m */,
+			);
+			path = FCRectangleStyle;
+			sourceTree = "<group>";
+		};
+		6412D44314042DCD00E1E9B9 /* FCComplexCorner */ = {
+			isa = PBXGroup;
+			children = (
+				6412D44414042DCD00E1E9B9 /* FCComplexCorner.h */,
+				6412D44514042DCD00E1E9B9 /* FCComplexCorner.m */,
+			);
+			path = FCComplexCorner;
+			sourceTree = "<group>";
+		};
+		6412D44814042DCD00E1E9B9 /* FCShapeStyle */ = {
+			isa = PBXGroup;
+			children = (
+				6412D44914042DCD00E1E9B9 /* FCShapeStyle.h */,
+				6412D44A14042DCD00E1E9B9 /* FCShapeStyle.m */,
+			);
+			path = FCShapeStyle;
+			sourceTree = "<group>";
+		};
+		6412D45214042E5200E1E9B9 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				6412D43114042C6B00E1E9B9 /* DrawView.h */,
+				6412D43214042C6B00E1E9B9 /* DrawView.m */,
+			);
+			name = DrawView;
+			sourceTree = "<group>";
+		};
+		64A716451404345C008000BC /* UIView3Mode */ = {
+			isa = PBXGroup;
+			children = (
+				64A7164714043496008000BC /* UIView3Mode.h */,
+				64A7164814043496008000BC /* UIView3Mode.m */,
+			);
+			name = UIView3Mode;
+			sourceTree = "<group>";
+		};
+		64A716631404667C008000BC /* FCReverseRoundedCornersView */ = {
+			isa = PBXGroup;
+			children = (
+				64A71667140466F9008000BC /* FCReverseRoundedCornersView.h */,
+				64A71668140466F9008000BC /* FCReverseRoundedCornersView.m */,
+			);
+			name = FCReverseRoundedCornersView;
+			sourceTree = "<group>";
+		};
+		64A716721405C751008000BC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				64A716EA140DB496008000BC /* FCRaysView */,
+				64A716E6140D5EE4008000BC /* FCFancyCircularProgressIndicator */,
+				64A716DB140C31E6008000BC /* FCCircularProgressIndicator */,
+				64A716D7140BFB5B008000BC /* FCPackageScrollableBg */,
+				64A716D61408712F008000BC /* JewelView */,
+				64A716CF14086FEE008000BC /* FCDecalScrollableBg */,
+				64A716CA140856CF008000BC /* FCScrollableBg */,
+				64A716B91406EDB7008000BC /* FCCustomTabsBg */,
+				64A716B31406D2C1008000BC /* FCStorePhotosZeroResultsBg */,
+				64A7169D1406C1BE008000BC /* TwoLevelView */,
+				64A716AE1406CEB5008000BC /* FCInviteNewBg */,
+				64A716A41406C3FC008000BC /* FCInvite */,
+				64A716AF1406D00B008000BC /* FCSignInLabel */,
+				64A716991406B871008000BC /* FCSignIn */,
+				64A716921406B5E8008000BC /* FCGrayText */,
+				64A7168D1406ADCC008000BC /* FCGrayOut */,
+				64A716851405DB8D008000BC /* FCConfirmationBg */,
+				64A716811405D681008000BC /* FCCheckInDetailsBg */,
+				64A716731405C75C008000BC /* FCCheckInCaptionBg */,
+				64A7167D1405D125008000BC /* FCButtonBg */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		64A716731405C75C008000BC /* FCCheckInCaptionBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716741405C78F008000BC /* FCCheckInCaptionBg.h */,
+				64A716751405C78F008000BC /* FCCheckInCaptionBg.m */,
+			);
+			name = FCCheckInCaptionBg;
+			sourceTree = "<group>";
+		};
+		64A7167D1405D125008000BC /* FCButtonBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A7167E1405D21D008000BC /* FCButtonBg.h */,
+				64A7167F1405D21D008000BC /* FCButtonBg.m */,
+			);
+			name = FCButtonBg;
+			sourceTree = "<group>";
+		};
+		64A716811405D681008000BC /* FCCheckInDetailsBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716821405D6E4008000BC /* FCCheckInDetailsBg.h */,
+				64A716831405D6E4008000BC /* FCCheckInDetailsBg.m */,
+			);
+			name = FCCheckInDetailsBg;
+			sourceTree = "<group>";
+		};
+		64A716851405DB8D008000BC /* FCConfirmationBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716861405DBBD008000BC /* FCConfirmationBg.h */,
+				64A716871405DBBD008000BC /* FCConfirmationBg.m */,
+			);
+			name = FCConfirmationBg;
+			sourceTree = "<group>";
+		};
+		64A7168D1406ADCC008000BC /* FCGrayOut */ = {
+			isa = PBXGroup;
+			children = (
+				64A7168F1406B231008000BC /* FCGrayOut.h */,
+				64A716901406B231008000BC /* FCGrayOut.m */,
+			);
+			name = FCGrayOut;
+			sourceTree = "<group>";
+		};
+		64A716921406B5E8008000BC /* FCGrayText */ = {
+			isa = PBXGroup;
+			children = (
+				64A716961406B622008000BC /* FCGrayText.h */,
+				64A716971406B622008000BC /* FCGrayText.m */,
+			);
+			name = FCGrayText;
+			sourceTree = "<group>";
+		};
+		64A716991406B871008000BC /* FCSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				64A716A81406C992008000BC /* FCSignIn.h */,
+				64A716A91406C992008000BC /* FCSignIn.m */,
+			);
+			name = FCSignIn;
+			path = CustomViews/FCSignIn;
+			sourceTree = "<group>";
+		};
+		64A7169D1406C1BE008000BC /* TwoLevelView */ = {
+			isa = PBXGroup;
+			children = (
+				64A7169A1406B8DF008000BC /* TwoLevelView.h */,
+				64A7169B1406B8DF008000BC /* TwoLevelView.m */,
+			);
+			name = TwoLevelView;
+			sourceTree = "<group>";
+		};
+		64A716A41406C3FC008000BC /* FCInvite */ = {
+			isa = PBXGroup;
+			children = (
+				64A716A51406C42B008000BC /* FCInviteBg.h */,
+				64A716A61406C42B008000BC /* FCInviteBg.m */,
+			);
+			name = FCInvite;
+			sourceTree = "<group>";
+		};
+		64A716AE1406CEB5008000BC /* FCInviteNewBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716AB1406CA78008000BC /* FCInviteNewBg.h */,
+				64A716AC1406CA78008000BC /* FCInviteNewBg.m */,
+			);
+			name = FCInviteNewBg;
+			sourceTree = "<group>";
+		};
+		64A716AF1406D00B008000BC /* FCSignInLabel */ = {
+			isa = PBXGroup;
+			children = (
+				64A716B01406D072008000BC /* FCSignInLabel.h */,
+				64A716B11406D072008000BC /* FCSignInLabel.m */,
+			);
+			name = FCSignInLabel;
+			sourceTree = "<group>";
+		};
+		64A716B31406D2C1008000BC /* FCStorePhotosZeroResultsBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716B41406D321008000BC /* FCStorePhotosZeroResultsBg.h */,
+				64A716B51406D321008000BC /* FCStorePhotosZeroResultsBg.m */,
+			);
+			name = FCStorePhotosZeroResultsBg;
+			sourceTree = "<group>";
+		};
+		64A716B91406EDB7008000BC /* FCCustomTabsBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716BA1406EDF6008000BC /* FCCustomTabsBg.h */,
+				64A716BB1406EDF6008000BC /* FCCustomTabsBg.m */,
+			);
+			name = FCCustomTabsBg;
+			sourceTree = "<group>";
+		};
+		64A716C114070A86008000BC /* DrawView2 */ = {
+			isa = PBXGroup;
+			children = (
+				64A716C314070AC4008000BC /* DrawView2.h */,
+				64A716C414070AC4008000BC /* DrawView2.m */,
+			);
+			name = DrawView2;
+			sourceTree = "<group>";
+		};
+		64A716CA140856CF008000BC /* FCScrollableBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716CC14085721008000BC /* FCScrollableBg.h */,
+				64A716CD14085721008000BC /* FCScrollableBg.m */,
+			);
+			name = FCScrollableBg;
+			sourceTree = "<group>";
+		};
+		64A716CF14086FEE008000BC /* FCDecalScrollableBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716D014087049008000BC /* FCDecalScrollableBg.h */,
+				64A716D114087049008000BC /* FCDecalScrollableBg.m */,
+			);
+			name = FCDecalScrollableBg;
+			sourceTree = "<group>";
+		};
+		64A716D61408712F008000BC /* JewelView */ = {
+			isa = PBXGroup;
+			children = (
+				64A716D314087123008000BC /* JewelView.h */,
+				64A716D414087125008000BC /* JewelView.m */,
+			);
+			name = JewelView;
+			sourceTree = "<group>";
+		};
+		64A716D7140BFB5B008000BC /* FCPackageScrollableBg */ = {
+			isa = PBXGroup;
+			children = (
+				64A716D8140C0493008000BC /* FCPackageScrollableBg.h */,
+				64A716D9140C0493008000BC /* FCPackageScrollableBg.m */,
+			);
+			name = FCPackageScrollableBg;
+			sourceTree = "<group>";
+		};
+		64A716DB140C31E6008000BC /* FCCircularProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				64A716DF140C46A5008000BC /* FCCircularProgressIndicator.h */,
+				64A716E0140C46A5008000BC /* FCCircularProgressIndicator.m */,
+			);
+			name = FCCircularProgressIndicator;
+			sourceTree = "<group>";
+		};
+		64A716E2140D3F59008000BC /* FCProgressStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A716E3140D3FA2008000BC /* FCProgressStyle.h */,
+				64A716E4140D3FA2008000BC /* FCProgressStyle.m */,
+			);
+			name = FCProgressStyle;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		64A716E6140D5EE4008000BC /* FCFancyCircularProgressIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				64A716E7140D5F1C008000BC /* FCFancyCircularProgressIndicator.h */,
+				64A716E8140D5F1C008000BC /* FCFancyCircularProgressIndicator.m */,
+			);
+			name = FCFancyCircularProgressIndicator;
+			sourceTree = "<group>";
+		};
+		64A716EA140DB496008000BC /* FCRaysView */ = {
+			isa = PBXGroup;
+			children = (
+				64A716EE140DB578008000BC /* FCRaysView.h */,
+				64A716EF140DB578008000BC /* FCRaysView.m */,
+			);
+			name = FCRaysView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +664,7 @@
 				6412D3FE14042BA200E1E9B9 /* InfoPlist.strings in Resources */,
 				6412D40714042BA200E1E9B9 /* MainWindow.xib in Resources */,
 				6412D40D14042BA200E1E9B9 /* View_PracticeViewController.xib in Resources */,
+				64A716B81406ED0C008000BC /* checkInDetails_bkgd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +703,38 @@
 				6412D40014042BA200E1E9B9 /* main.m in Sources */,
 				6412D40414042BA200E1E9B9 /* View_PracticeAppDelegate.m in Sources */,
 				6412D40A14042BA200E1E9B9 /* View_PracticeViewController.m in Sources */,
+				6412D42F14042BDD00E1E9B9 /* UIViewGradient.m in Sources */,
+				6412D43314042C6B00E1E9B9 /* DrawView.m in Sources */,
+				6412D44B14042DCD00E1E9B9 /* FCGraphicsAPI.m in Sources */,
+				6412D44C14042DCD00E1E9B9 /* FCBitmapStyle.m in Sources */,
+				6412D44D14042DCD00E1E9B9 /* FCGradientStyle.m in Sources */,
+				6412D44E14042DCD00E1E9B9 /* FCComplexCorner.m in Sources */,
+				6412D44F14042DCD00E1E9B9 /* FCRectangleStyle.m in Sources */,
+				6412D45014042DCD00E1E9B9 /* FCShapeStyle.m in Sources */,
+				64A7164914043496008000BC /* UIView3Mode.m in Sources */,
+				64A71669140466F9008000BC /* FCReverseRoundedCornersView.m in Sources */,
+				64A716761405C78F008000BC /* FCCheckInCaptionBg.m in Sources */,
+				64A716801405D21D008000BC /* FCButtonBg.m in Sources */,
+				64A716841405D6E4008000BC /* FCCheckInDetailsBg.m in Sources */,
+				64A716881405DBBD008000BC /* FCConfirmationBg.m in Sources */,
+				64A716911406B231008000BC /* FCGrayOut.m in Sources */,
+				64A716981406B622008000BC /* FCGrayText.m in Sources */,
+				64A7169C1406B8DF008000BC /* TwoLevelView.m in Sources */,
+				64A716A71406C42B008000BC /* FCInviteBg.m in Sources */,
+				64A716AA1406C992008000BC /* FCSignIn.m in Sources */,
+				64A716AD1406CA78008000BC /* FCInviteNewBg.m in Sources */,
+				64A716B21406D072008000BC /* FCSignInLabel.m in Sources */,
+				64A716B61406D321008000BC /* FCStorePhotosZeroResultsBg.m in Sources */,
+				64A716BC1406EDF6008000BC /* FCCustomTabsBg.m in Sources */,
+				64A716C514070AC4008000BC /* DrawView2.m in Sources */,
+				64A716CE14085721008000BC /* FCScrollableBg.m in Sources */,
+				64A716D214087049008000BC /* FCDecalScrollableBg.m in Sources */,
+				64A716D514087127008000BC /* JewelView.m in Sources */,
+				64A716DA140C0493008000BC /* FCPackageScrollableBg.m in Sources */,
+				64A716E1140C46A5008000BC /* FCCircularProgressIndicator.m in Sources */,
+				64A716E5140D3FA2008000BC /* FCProgressStyle.m in Sources */,
+				64A716E9140D5F1C008000BC /* FCFancyCircularProgressIndicator.m in Sources */,
+				64A716F0140DB578008000BC /* FCRaysView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +914,7 @@
 				6412D42914042BA300E1E9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6412D42A14042BA300E1E9B9 /* Build configuration list for PBXNativeTarget "View PracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +923,7 @@
 				6412D42C14042BA300E1E9B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

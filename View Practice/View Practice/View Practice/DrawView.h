@@ -7,15 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DrawLabel.h"
+
 
 @interface DrawView : UIView {
-    //UILabel *statusLabel;
-    DrawLabel *statusLabel;
 
 }
 - (void)buttonPressed:(id)sender;
-
-@property (retain, nonatomic) UILabel *statusLabel; // this should be under DrawView.h
 
 @end

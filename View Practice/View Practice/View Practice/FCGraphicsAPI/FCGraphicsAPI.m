@@ -85,15 +85,36 @@ static FCGraphicsAPI *graphicsAPI = nil;
             
             if (isStroke)
             {
-                CGContextReplacePathWithStrokedPath(aContext);
-                color1 = [gradientStyle.strokeColor CGColor];
-                color2 = [gradientStyle.strokeGradientColor CGColor];
-                fillType = gradientStyle.strokeType;
+//                CGContextReplacePathWithStrokedPath(aContext);
+//                color1 = [gradientStyle.strokeColor CGColor];
+//                color2 = [gradientStyle.strokeGradientColor CGColor];
+//                fillType = gradientStyle.strokeType;
 //                NSLog(@"isStroke true, strokeColor: %@", color1);
-                //NSLog(@"isStroke true: %d", fillType);
+//                //NSLog(@"isStroke true: %d", fillType);
+                /*
+                 ISAAC: I've added a check for zero stroke width, because I hate specifying stroke colors I'll never use
+                 the second case should never actually be drawn, because it only occurs when the strokeWidth is 0.
+                 */
+                if([gradientStyle.strokeWidth floatValue] > 0)
+                {
+//                    NSLog(@"There's a stroke width");
+                    CGContextReplacePathWithStrokedPath(aContext);
+                    color1 = [gradientStyle.strokeColor CGColor];
+                    color2 = [gradientStyle.strokeGradientColor CGColor];
+                    fillType = gradientStyle.strokeType;
+                } 
+                else
+                {
+//                    NSLog(@"No Stroke Width");
+                    CGContextReplacePathWithStrokedPath(aContext);
+                    color1 = [gradientStyle.fillColor CGColor];
+                    color2 = [gradientStyle.fillColor CGColor];
+                    fillType = gradientStyle.strokeType; 
+                }
             }
             else
             {
+//                NSLog(@"Setting Gradient Fill");
                 color1 = [gradientStyle.fillColor CGColor];
                 color2 = [gradientStyle.gradientColor CGColor];
                 fillType = gradientStyle.fillType;
@@ -107,16 +128,37 @@ static FCGraphicsAPI *graphicsAPI = nil;
                 startComponents[0], startComponents[1], startComponents[2], startComponents[3],
                 endComponents[0], endComponents[1], endComponents[2], endComponents[3]
             };
+//            NSLog(@"Gradient Start r:%f g:%f b:%f", startComponents[0], startComponents[1], startComponents[2]);
+//            NSLog(@"Gradient End r:%f g:%f b:%f", endComponents[0], endComponents[1], endComponents[2]);
             CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
             CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, locations, 2);
-            
-            CGContextClip(aContext);
-            //fillType = 0;
+            //// Experiment for Alpha
+//            const CGFloat *startComponents = CGColorGetComponents(color1);
+//            const CGFloat *endComponents = CGColorGetComponents(color2);
+//            CGFloat components[12] = 
+//            {
+//                startComponents[0], startComponents[1], startComponents[2], startComponents[3],
+//                endComponents[0], endComponents[1], endComponents[2], endComponents[3],
+//                endComponents[0], endComponents[1], endComponents[2], endComponents[3]
+//            };
+//            
+//            //            NSLog(@"Gradient Start r:%f g:%f b:%f", startComponents[0], startComponents[1], startComponents[2]);
+//            //            NSLog(@"Gradient End r:%f g:%f b:%f", endComponents[0], endComponents[1], endComponents[2]);
+//            CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+//            CGGradientRef gradient = CGGradientCreateWithColorComponents(colorspace, components, nil, 3);
+            //// end of Experiment for Alpha
+            /*
+             Is this the culprit for the clipping errors? maybe...? You have to save and restore the clipping state..
+             No, the state is saved in the drawShape methods, and restored after the call to renderStyle
+             
+             Doesn't this the context's current path to an empty path?
+             */
+            CGContextClip(aContext);    
+//            fillType = 0;
 //            NSLog(@"fillType %d", fillType);
             switch (fillType) {
                 case kFCGradientRadial:
                 {
-//                    NSLog(@"radial");
                     CGPoint point = CGPointMake(midx, midy);
                     CGFloat startRadius = 0.0f;
                     CGFloat endRadius = MAX(maxx-minx, maxy-miny);
@@ -138,18 +180,17 @@ static FCGraphicsAPI *graphicsAPI = nil;
                     CGPoint endPoint = CGPointMake(midx, maxy+[style.strokeWidth floatValue]/2);
                     CGContextDrawLinearGradient(aContext, gradient, startPoint, endPoint, 0);
                 } break;
-                
-//                //ISAAC
-//                case kFCGradientDirectional:
-//                {
-//                    NSLog(@"directional");
-//                    CGPoint startPoint = CGPointMake(midx, miny-[style.strokeWidth floatValue]/2);
-//                    CGPoint endPoint = CGPointMake(maxx, maxy+[style.strokeWidth floatValue]/2);
-//                    CGContextDrawLinearGradient(aContext, gradient, startPoint, endPoint, 0);
-//                    
-//                }
+                case kFCGradientRadialFirstHalf:
+                {
+                    //                    NSLog(@"radial");
+                    CGPoint point = CGPointMake(midx, midy);
+                    CGFloat startRadius = 0.0f;
+                    CGFloat endRadius = MIN(maxx-minx, maxy-miny)/2;
+                    NSLog(@"endRadius %f",endRadius);                    
+                    CGContextDrawRadialGradient(aContext, gradient, point, startRadius, point, endRadius, kCGGradientDrawsAfterEndLocation);
+                    break;
+                }
                 default:
-//                    NSLog(@"Isaac's hunch");
                     break;
             }
             CGGradientRelease(gradient), gradient = nil;
@@ -233,6 +274,108 @@ static FCGraphicsAPI *graphicsAPI = nil;
 
 // ----------------------------------------------------------
 
+//////ISAAC:  Untested for edge cases
+// -- draw inverse rect --------------------------------
+
++ (void)drawInverseRect:(CGRect)aRect withStyle:(FCRectangleStyle *)aStyle context:(CGContextRef)aContext
+{
+    FCShapeStyle *style = aStyle.style;
+    
+    
+    
+//    CGRect rectangle = CGRectMake(aRect.origin.x + [style.strokeWidth floatValue]/2, aRect.origin.y + [style.strokeWidth floatValue]/2, aRect.size.width - [style.strokeWidth floatValue], aRect.size.height - [style.strokeWidth floatValue]);
+    CGRect rectangle = CGRectMake(aRect.origin.x , aRect.origin.y, aRect.size.width, aRect.size.height);
+
+    [style.fillColor setFill];
+    [style.strokeColor setStroke];
+    
+    CGFloat minx = CGRectGetMinX(rectangle), midx = CGRectGetMidX(rectangle), maxx = CGRectGetMaxX(rectangle);
+    CGFloat miny = CGRectGetMinY(rectangle), midy = CGRectGetMidY(rectangle), maxy = CGRectGetMaxY(rectangle);
+    
+    // FILL
+    {
+        CGContextSaveGState(aContext);
+        // Rectangle outline
+        CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+        
+        CGContextBeginPath(aContext);
+        
+        //ISAAC Draw the upper LEFT corner only.
+        CGContextMoveToPoint(aContext, minx, midy);
+        if (aStyle.complexCorner.upperLeft) CGContextAddArcToPoint(aContext, minx, miny, midx, miny, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, minx, miny, midx, miny, 0);
+        CGContextAddLineToPoint(aContext, minx, miny);
+        CGContextAddLineToPoint(aContext, minx, midy);
+        CGContextClosePath(aContext);
+
+        
+        //Isaac Draw the upper RIGHT corner
+        CGContextMoveToPoint(aContext, midx, miny);
+        if (aStyle.complexCorner.upperRight) CGContextAddArcToPoint(aContext, maxx, miny, maxx, midy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, maxx, miny, maxx, midy, 0);
+        CGContextAddLineToPoint(aContext, maxx, miny);
+        CGContextAddLineToPoint(aContext, midx, miny);
+        CGContextClosePath(aContext);
+        
+        //Isaac Draw the lower RIGHT corner
+        CGContextMoveToPoint(aContext, maxx, midy);
+        if (aStyle.complexCorner.lowerRight) CGContextAddArcToPoint(aContext, maxx, maxy, midx, maxy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, maxx, maxy, midx, maxy, 0);
+        CGContextAddLineToPoint(aContext, maxx, maxy);
+        CGContextAddLineToPoint(aContext, maxx, midy);
+        CGContextClosePath(aContext);
+        
+        //Isaac Draw the lower LEFT corner
+        CGContextMoveToPoint(aContext, midx, maxy);
+        if (aStyle.complexCorner.lowerLeft) CGContextAddArcToPoint(aContext, minx, maxy, minx, midy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, minx, maxy, minx, midy, 0);
+        CGContextAddLineToPoint(aContext, minx, maxy);
+        CGContextAddLineToPoint(aContext, midx, maxy);
+        CGContextClosePath(aContext);
+
+        
+        // end Rectangle outline
+        
+        [self renderStyle:style withRect:rectangle asStroke:NO inContext:aContext];
+        
+        CGContextRestoreGState(aContext);
+    }
+    // END FILL
+    
+    
+    rectangle = CGRectMake(aRect.origin.x + [style.strokeWidth floatValue]/2, aRect.origin.y + [style.strokeWidth floatValue]/2, aRect.size.width - [style.strokeWidth floatValue], aRect.size.height - [style.strokeWidth floatValue]);
+    minx = CGRectGetMinX(rectangle), midx = CGRectGetMidX(rectangle), maxx = CGRectGetMaxX(rectangle);
+    miny = CGRectGetMinY(rectangle), midy = CGRectGetMidY(rectangle), maxy = CGRectGetMaxY(rectangle);
+    
+    // STROKE
+    {
+        CGContextSaveGState(aContext);
+        
+        // Rectangle outline
+        CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+        
+        CGContextBeginPath(aContext);
+        CGContextMoveToPoint(aContext, minx, midy);
+        if (aStyle.complexCorner.upperLeft) CGContextAddArcToPoint(aContext, minx, miny, midx, miny, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, minx, miny, midx, miny, 0);
+        if (aStyle.complexCorner.upperRight) CGContextAddArcToPoint(aContext, maxx, miny, maxx, midy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, maxx, miny, maxx, midy, 0);
+        if (aStyle.complexCorner.lowerRight) CGContextAddArcToPoint(aContext, maxx, maxy, midx, maxy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, maxx, maxy, midx, maxy, 0);
+        if (aStyle.complexCorner.lowerLeft) CGContextAddArcToPoint(aContext, minx, maxy, minx, midy, [aStyle.cornerRadius floatValue]);
+        else CGContextAddArcToPoint(aContext, minx, maxy, minx, midy, 0);
+        CGContextClosePath(aContext);
+        // end Rectangle outline
+        
+        [self renderStyle:style withRect:rectangle asStroke:YES inContext:aContext];
+        
+        CGContextRestoreGState(aContext);
+    }
+    // END STROKE
+}
+
+// ----------------------------------------------------------
+
 // -- draw ellipse ------------------------------------------
 
 + (void)drawEllipse:(CGRect)aRect withStyle:(FCShapeStyle *)aStyle context:(CGContextRef)aContext
@@ -284,6 +427,176 @@ static FCGraphicsAPI *graphicsAPI = nil;
     // END STROKE
 }
 
+// --------------------------------------------------------
+
+// ISAAC - Added to deal with timer animation
+// -- draw ellipse slice ------------------------------------------
+//
+//+ (void)drawEllipseSlice:(CGRect)aRect withStyle:(FCShapeStyle *)style arcLength:(float)radians context:(CGContextRef)aContext
+//{
+//    
+//
+//    CGRect rectangle = CGRectMake(aRect.origin.x, aRect.origin.y, aRect.size.width, aRect.size.height);
+//    CGFloat midx = CGRectGetMidX(rectangle);//, minx = CGRectGetMinX(rectangle), maxx = CGRectGetMaxX(rectangle);
+//    CGFloat miny = CGRectGetMinY(rectangle), midy = CGRectGetMidY(rectangle);//, maxy = CGRectGetMaxY(rectangle);
+//    CGFloat radius = midx; //assuming a circle
+//    
+//    CGPoint center = CGPointMake(midx, midy);
+//    //see UIBezierPath reference
+//    
+//    // FILL
+//    CGContextSaveGState(aContext);
+//    [style.fillColor setFill];
+//    [style.strokeColor setStroke];
+//    CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+//    float drawStartAngle = 3*M_PI_2;
+//    UIBezierPath *slicePath = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:drawStartAngle endAngle:(drawStartAngle+radians) clockwise:TRUE];
+//    if(radians <2*M_PI)
+//    {   
+//        [slicePath addLineToPoint:center];
+//        [slicePath addLineToPoint:CGPointMake(midx, miny)]; //maybe cos(radians), sin(radians) but then it has to be transformed to the
+//        NSLog(@"midx %f, miny %f", midx, miny);
+//        
+//        //does this need to be proportional to drawStartAngle?
+//        CGPoint arcEnd = CGPointMake(radius*cosf(radians-M_PI_2), radius*sinf(radians-M_PI_2));         
+//        NSLog(@"Radians %f, arc endpoint: %f, %f",(radians-M_PI_2)/M_PI, arcEnd.x, arcEnd.y);
+//        
+////        arcEnd = CGPointApplyAffineTransform(arcEnd, CGAffineTransformMakeScale(1, 1)); //flip the y axis
+////        NSLog(@"arc endpoint resized: %f, %f", arcEnd.x, arcEnd.y);
+//        arcEnd = CGPointApplyAffineTransform(arcEnd, CGAffineTransformMakeTranslation(center.x, center.y)); //push the x and y axis to the origin
+//        NSLog(@"arc endpoint translated: %f, %f", arcEnd.x, arcEnd.y);
+////        CGContextGetUserSpaceToDeviceSpaceTransform()
+////        arcEnd = CGContextConvertPointToDeviceSpace(aContext, arcEnd);
+////        NSLog(@"arc endpoint to device space: %f, %f", arcEnd.x, arcEnd.y);
+//        
+////        [slicePath addLineToPoint:CGPointApplyAffineTransform(CGPointMake(radius*cosf(radians), radius*sinf(radians)), CGAffineTransformMakeScale(1, -1))]; 
+////        [slicePath addLineToPoint:arcEnd]; 
+//        CGPoint arcStart = CGPointMake(radius*cosf(drawStartAngle), radius*sinf(drawStartAngle));
+//        arcStart = CGPointApplyAffineTransform(arcStart, CGAffineTransformMakeTranslation(center.x, center.y)); //push the x and y axis to the origin
+//        
+//        
+//    }
+//    [slicePath closePath];
+//    // end pie outline
+//    // add the path to the context
+//    CGContextAddPath(aContext, [slicePath CGPath]);
+//    //render it using the provided style
+//    [self renderStyle:style withRect:rectangle asStroke:NO inContext:aContext];
+//    
+//    CGContextRestoreGState(aContext);
+//    // end FILL
+//    
+//    //New Coordinate system for stroke
+//    rectangle = CGRectMake(aRect.origin.x + [style.strokeWidth floatValue]/2, aRect.origin.y + [style.strokeWidth floatValue]/2, aRect.size.width - [style.strokeWidth floatValue], aRect.size.height - [style.strokeWidth floatValue]);
+//    radius = midx-[style.strokeWidth floatValue]/2; //assuming a circle
+//    // STROKE
+//    CGContextSaveGState(aContext);
+//    [style.fillColor setFill];
+//    [style.strokeColor setStroke];
+//    
+//    CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+//    slicePath = nil;
+//    slicePath = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:3*M_PI_2 endAngle:(3*M_PI_2+radians) clockwise:TRUE];
+//    //    NSLog(@"Radians: %f, Center (%f,%f), midx:%f, miny%f", radians, center.x, center.y, midx, miny);
+////    NSLog(@"Slice Draw midx:%f, miny%f",midx, miny);
+//    if(radians <2*M_PI)
+//    {
+//        [slicePath addLineToPoint:center];
+//        [slicePath addLineToPoint:CGPointMake(midx, miny)];
+//    }
+//    
+//    [slicePath closePath];
+//    [slicePath setLineWidth:[style.strokeWidth floatValue]];
+//    CGContextAddPath(aContext, [slicePath CGPath]);
+//    //render it using the provided style
+//    [self renderStyle:style withRect:rectangle asStroke:YES inContext:aContext];
+//    CGContextRestoreGState(aContext);
+//    //end STROKE
+////    [timerPath release];
+//}
+
+// --------------------------------------------------------
+
+// -- draw ellipse slice with starting angle ------------------------------------------
+/*
+ UIBezier curves work on a slightly rotated unit circle, so 3PI/2 is where PI/2 would normally be
+ The drawing is currently set to draw clockwise, but it could be altered to move counter clockwise
+ */
+
++ (void)drawEllipseSliceStart:(CGRect)aRect withStyle:(FCShapeStyle *)style arcAngleStart:(float)startRadians arcAngleLength:(float)radians context:(CGContextRef)aContext
+{
+    [self drawEllipseSliceStartRadius:aRect withStyle:style withRadius:CGRectGetMidX(aRect) arcAngleStart:startRadians arcAngleLength:radians context:aContext];
+}
+// --------------------------------------------------------
+
+// helper --------------------------------------------------------
+
++ (void)drawEllipseSliceStartRadius:(CGRect)aRect withStyle:(FCShapeStyle *)style withRadius:(float)radius arcAngleStart:(float)startRadians arcAngleLength:(float)radians context:(CGContextRef)aContext
+{
+    
+    
+    CGRect rectangle = CGRectMake(aRect.origin.x, aRect.origin.y, aRect.size.width, aRect.size.height);
+    CGFloat midx = CGRectGetMidX(rectangle);//, minx = CGRectGetMinX(rectangle), maxx = CGRectGetMaxX(rectangle);
+    CGFloat midy = CGRectGetMidY(rectangle);//, maxy = CGRectGetMaxY(rectangle);
+//    CGFloat radius = midx; //assuming a circle
+    
+    CGPoint center = CGPointMake(midx, midy);
+    //starting point on the arc translated to parametric, in this system
+    //see UIBezierPath reference
+    // FILL
+    CGContextSaveGState(aContext);
+    [style.fillColor setFill];
+    [style.strokeColor setStroke];
+    CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+    
+    CGPoint arcStart = CGPointMake(radius*cosf(startRadians), radius*sinf(startRadians));
+    arcStart = CGPointApplyAffineTransform(arcStart, CGAffineTransformMakeTranslation(center.x, center.y)); //push the x and y axis to the origin
+    
+    UIBezierPath *slicePath = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startRadians endAngle:(startRadians+radians) clockwise:TRUE];
+    
+    if(radians <2*M_PI)
+    {   
+        [slicePath addLineToPoint:center];
+        [slicePath addLineToPoint:arcStart];
+        
+    }
+    [slicePath closePath];
+    // end pie outline
+    // add the path to the context
+    CGContextAddPath(aContext, [slicePath CGPath]);
+    //render it using the provided style
+    [self renderStyle:style withRect:rectangle asStroke:NO inContext:aContext];
+    CGContextRestoreGState(aContext);
+    // end FILL
+    
+    //New Coordinate system for stroke
+    rectangle = CGRectMake(aRect.origin.x + [style.strokeWidth floatValue]/2, aRect.origin.y + [style.strokeWidth floatValue]/2, aRect.size.width - [style.strokeWidth floatValue], aRect.size.height - [style.strokeWidth floatValue]);
+    radius = midx-[style.strokeWidth floatValue]/2; //assuming a circle
+    // STROKE
+    CGContextSaveGState(aContext);
+    [style.fillColor setFill];
+    [style.strokeColor setStroke];
+    
+    CGContextSetLineWidth(aContext, [style.strokeWidth floatValue]);
+    slicePath = nil;
+    slicePath = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startRadians endAngle:(startRadians+radians) clockwise:TRUE];
+    //    NSLog(@"Radians: %f, Center (%f,%f), midx:%f, miny%f", radians, center.x, center.y, midx, miny);
+    //    NSLog(@"Slice Draw midx:%f, miny%f",midx, miny);
+    if(radians <2*M_PI)
+    {
+        [slicePath addLineToPoint:center];
+        [slicePath addLineToPoint:arcStart];
+    }
+    
+    [slicePath closePath];
+    [slicePath setLineWidth:[style.strokeWidth floatValue]];
+    CGContextAddPath(aContext, [slicePath CGPath]);
+    //render it using the provided style
+    [self renderStyle:style withRect:rectangle asStroke:YES inContext:aContext];
+    CGContextRestoreGState(aContext);
+    //end STROKE
+    //    [timerPath release];
+}
 // --------------------------------------------------------
 
 // -- draw triangle --------------------------------------------

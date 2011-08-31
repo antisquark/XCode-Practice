@@ -14,8 +14,8 @@ typedef enum
 {
     kFCGradientHorizontal,
     kFCGradientVertical,
-    kFCGradientRadial//,
-//    kFCGradientDirectional //ISAAC
+    kFCGradientRadial,
+    kFCGradientRadialFirstHalf  //added for fadeout effect in gradient
 }
 FCGradientType;
 

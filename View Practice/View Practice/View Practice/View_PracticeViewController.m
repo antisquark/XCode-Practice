@@ -7,6 +7,10 @@
 //
 
 #import "View_PracticeViewController.h"
+#import "DrawView.h"
+#import "DrawView2.h"
+#define IPAD_MAX_WIDTH 768
+#define IPAD_MAX_HEIGHT 1024
 
 @implementation View_PracticeViewController
 
@@ -20,13 +24,15 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DrawView *dView = [[DrawView alloc]initWithFrame:CGRectMake(0, 0, IPAD_MAX_WIDTH, IPAD_MAX_HEIGHT)];
+    [self.view addSubview:dView];
 }
-*/
+
 
 - (void)viewDidUnload
 {
