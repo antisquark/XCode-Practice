@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64A7178B141149C0008000BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178A141149C0008000BC /* UIKit.framework */; };
+		64A7178D141149C0008000BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178C141149C0008000BC /* Foundation.framework */; };
+		64A7178F141149C0008000BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178E141149C0008000BC /* CoreGraphics.framework */; };
+		64A71795141149C0008000BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64A71793141149C0008000BC /* InfoPlist.strings */; };
+		64A71797141149C0008000BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71796141149C0008000BC /* main.m */; };
+		64A7179B141149C0008000BC /* iSew2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7179A141149C0008000BC /* iSew2AppDelegate.m */; };
+		64A7179E141149C0008000BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A7179C141149C0008000BC /* MainWindow.xib */; };
+		64A717A1141149C0008000BC /* iSew2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A717A0141149C0008000BC /* iSew2ViewController.m */; };
+		64A717A4141149C0008000BC /* iSew2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A717A2141149C0008000BC /* iSew2ViewController.xib */; };
+		64A717AC141149C0008000BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A717AB141149C0008000BC /* SenTestingKit.framework */; };
+		64A717AD141149C0008000BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178A141149C0008000BC /* UIKit.framework */; };
+		64A717AE141149C0008000BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178C141149C0008000BC /* Foundation.framework */; };
+		64A717AF141149C0008000BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7178E141149C0008000BC /* CoreGraphics.framework */; };
+		64A717B7141149C0008000BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64A717B5141149C0008000BC /* InfoPlist.strings */; };
+		64A717B9141149C0008000BC /* iSew2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 64A717B8141149C0008000BC /* iSew2Tests.h */; };
+		64A717BB141149C0008000BC /* iSew2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A717BA141149C0008000BC /* iSew2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64A717B0141149C0008000BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64A7177D141149C0008000BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64A71785141149C0008000BC;
+			remoteInfo = iSew2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64A71786141149C0008000BC /* iSew2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSew2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A7178A141149C0008000BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64A7178C141149C0008000BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64A7178E141149C0008000BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64A71792141149C0008000BC /* iSew2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSew2-Info.plist"; sourceTree = "<group>"; };
+		64A71794141149C0008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64A71796141149C0008000BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64A71798141149C0008000BC /* iSew2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSew2-Prefix.pch"; sourceTree = "<group>"; };
+		64A71799141149C0008000BC /* iSew2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSew2AppDelegate.h; sourceTree = "<group>"; };
+		64A7179A141149C0008000BC /* iSew2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSew2AppDelegate.m; sourceTree = "<group>"; };
+		64A7179D141149C0008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		64A7179F141149C0008000BC /* iSew2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSew2ViewController.h; sourceTree = "<group>"; };
+		64A717A0141149C0008000BC /* iSew2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSew2ViewController.m; sourceTree = "<group>"; };
+		64A717A3141149C0008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSew2ViewController.xib; sourceTree = "<group>"; };
+		64A717AA141149C0008000BC /* iSew2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSew2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A717AB141149C0008000BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64A717B4141149C0008000BC /* iSew2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSew2Tests-Info.plist"; sourceTree = "<group>"; };
+		64A717B6141149C0008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64A717B8141149C0008000BC /* iSew2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSew2Tests.h; sourceTree = "<group>"; };
+		64A717BA141149C0008000BC /* iSew2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSew2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64A71783141149C0008000BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A7178B141149C0008000BC /* UIKit.framework in Frameworks */,
+				64A7178D141149C0008000BC /* Foundation.framework in Frameworks */,
+				64A7178F141149C0008000BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A717A6141149C0008000BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A717AC141149C0008000BC /* SenTestingKit.framework in Frameworks */,
+				64A717AD141149C0008000BC /* UIKit.framework in Frameworks */,
+				64A717AE141149C0008000BC /* Foundation.framework in Frameworks */,
+				64A717AF141149C0008000BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64A7177B141149C0008000BC = {
+			isa = PBXGroup;
+			children = (
+				64A71790141149C0008000BC /* iSew2 */,
+				64A717B2141149C0008000BC /* iSew2Tests */,
+				64A71789141149C0008000BC /* Frameworks */,
+				64A71787141149C0008000BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64A71787141149C0008000BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64A71786141149C0008000BC /* iSew2.app */,
+				64A717AA141149C0008000BC /* iSew2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64A71789141149C0008000BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A7178A141149C0008000BC /* UIKit.framework */,
+				64A7178C141149C0008000BC /* Foundation.framework */,
+				64A7178E141149C0008000BC /* CoreGraphics.framework */,
+				64A717AB141149C0008000BC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A71790141149C0008000BC /* iSew2 */ = {
+			isa = PBXGroup;
+			children = (
+				64A71799141149C0008000BC /* iSew2AppDelegate.h */,
+				64A7179A141149C0008000BC /* iSew2AppDelegate.m */,
+				64A7179C141149C0008000BC /* MainWindow.xib */,
+				64A7179F141149C0008000BC /* iSew2ViewController.h */,
+				64A717A0141149C0008000BC /* iSew2ViewController.m */,
+				64A717A2141149C0008000BC /* iSew2ViewController.xib */,
+				64A71791141149C0008000BC /* Supporting Files */,
+			);
+			path = iSew2;
+			sourceTree = "<group>";
+		};
+		64A71791141149C0008000BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A71792141149C0008000BC /* iSew2-Info.plist */,
+				64A71793141149C0008000BC /* InfoPlist.strings */,
+				64A71796141149C0008000BC /* main.m */,
+				64A71798141149C0008000BC /* iSew2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64A717B2141149C0008000BC /* iSew2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				64A717B8141149C0008000BC /* iSew2Tests.h */,
+				64A717BA141149C0008000BC /* iSew2Tests.m */,
+				64A717B3141149C0008000BC /* Supporting Files */,
+			);
+			path = iSew2Tests;
+			sourceTree = "<group>";
+		};
+		64A717B3141149C0008000BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A717B4141149C0008000BC /* iSew2Tests-Info.plist */,
+				64A717B5141149C0008000BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64A71785141149C0008000BC /* iSew2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A717BE141149C0008000BC /* Build configuration list for PBXNativeTarget "iSew2" */;
+			buildPhases = (
+				64A71782141149C0008000BC /* Sources */,
+				64A71783141149C0008000BC /* Frameworks */,
+				64A71784141149C0008000BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSew2;
+			productName = iSew2;
+			productReference = 64A71786141149C0008000BC /* iSew2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64A717A9141149C0008000BC /* iSew2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A717C1141149C0008000BC /* Build configuration list for PBXNativeTarget "iSew2Tests" */;
+			buildPhases = (
+				64A717A5141149C0008000BC /* Sources */,
+				64A717A6141149C0008000BC /* Frameworks */,
+				64A717A7141149C0008000BC /* Resources */,
+				64A717A8141149C0008000BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64A717B1141149C0008000BC /* PBXTargetDependency */,
+			);
+			name = iSew2Tests;
+			productName = iSew2Tests;
+			productReference = 64A717AA141149C0008000BC /* iSew2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64A7177D141149C0008000BC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 64A71780141149C0008000BC /* Build configuration list for PBXProject "iSew2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64A7177B141149C0008000BC;
+			productRefGroup = 64A71787141149C0008000BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64A71785141149C0008000BC /* iSew2 */,
+				64A717A9141149C0008000BC /* iSew2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64A71784141149C0008000BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A71795141149C0008000BC /* InfoPlist.strings in Resources */,
+				64A7179E141149C0008000BC /* MainWindow.xib in Resources */,
+				64A717A4141149C0008000BC /* iSew2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A717A7141149C0008000BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A717B7141149C0008000BC /* InfoPlist.strings in Resources */,
+				64A717B9141149C0008000BC /* iSew2Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64A717A8141149C0008000BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64A71782141149C0008000BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A71797141149C0008000BC /* main.m in Sources */,
+				64A7179B141149C0008000BC /* iSew2AppDelegate.m in Sources */,
+				64A717A1141149C0008000BC /* iSew2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A717A5141149C0008000BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A717BB141149C0008000BC /* iSew2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64A717B1141149C0008000BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64A71785141149C0008000BC /* iSew2 */;
+			targetProxy = 64A717B0141149C0008000BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64A71793141149C0008000BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A71794141149C0008000BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64A7179C141149C0008000BC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A7179D141149C0008000BC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		64A717A2141149C0008000BC /* iSew2ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A717A3141149C0008000BC /* en */,
+			);
+			name = iSew2ViewController.xib;
+			sourceTree = "<group>";
+		};
+		64A717B5141149C0008000BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A717B6141149C0008000BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64A717BC141149C0008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		64A717BD141149C0008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64A717BF141149C0008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSew2/iSew2-Prefix.pch";
+				INFOPLIST_FILE = "iSew2/iSew2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64A717C0141149C0008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSew2/iSew2-Prefix.pch";
+				INFOPLIST_FILE = "iSew2/iSew2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64A717C2141149C0008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSew2.app/iSew2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSew2/iSew2-Prefix.pch";
+				INFOPLIST_FILE = "iSew2Tests/iSew2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		64A717C3141149C0008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSew2.app/iSew2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSew2/iSew2-Prefix.pch";
+				INFOPLIST_FILE = "iSew2Tests/iSew2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64A71780141149C0008000BC /* Build configuration list for PBXProject "iSew2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A717BC141149C0008000BC /* Debug */,
+				64A717BD141149C0008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A717BE141149C0008000BC /* Build configuration list for PBXNativeTarget "iSew2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A717BF141149C0008000BC /* Debug */,
+				64A717C0141149C0008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64A717C1141149C0008000BC /* Build configuration list for PBXNativeTarget "iSew2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A717C2141149C0008000BC /* Debug */,
+				64A717C3141149C0008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64A7177D141149C0008000BC /* Project object */;
+}

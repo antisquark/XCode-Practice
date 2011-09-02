@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64A7170A140FFC09008000BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A71709140FFC09008000BC /* UIKit.framework */; };
+		64A7170C140FFC09008000BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7170B140FFC09008000BC /* Foundation.framework */; };
+		64A7170E140FFC09008000BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7170D140FFC09008000BC /* CoreGraphics.framework */; };
+		64A71714140FFC09008000BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64A71712140FFC09008000BC /* InfoPlist.strings */; };
+		64A71716140FFC09008000BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71715140FFC09008000BC /* main.m */; };
+		64A7171A140FFC09008000BC /* iSewWorkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71719140FFC09008000BC /* iSewWorkAppDelegate.m */; };
+		64A7171D140FFC09008000BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A7171B140FFC09008000BC /* MainWindow.xib */; };
+		64A71720140FFC09008000BC /* iSewWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7171F140FFC09008000BC /* iSewWorkViewController.m */; };
+		64A71723140FFC09008000BC /* iSewWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A71721140FFC09008000BC /* iSewWorkViewController.xib */; };
+		64A7172B140FFC09008000BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7172A140FFC09008000BC /* SenTestingKit.framework */; };
+		64A7172C140FFC09008000BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A71709140FFC09008000BC /* UIKit.framework */; };
+		64A7172D140FFC09008000BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7170B140FFC09008000BC /* Foundation.framework */; };
+		64A7172E140FFC09008000BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7170D140FFC09008000BC /* CoreGraphics.framework */; };
+		64A71736140FFC09008000BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64A71734140FFC09008000BC /* InfoPlist.strings */; };
+		64A71738140FFC09008000BC /* iSewWorkTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 64A71737140FFC09008000BC /* iSewWorkTests.h */; };
+		64A7173A140FFC09008000BC /* iSewWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71739140FFC09008000BC /* iSewWorkTests.m */; };
+		64A71747140FFC5E008000BC /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71746140FFC5E008000BC /* DrawView.m */; };
+		64A7174E140FFE40008000BC /* FCGraphicsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7174D140FFE40008000BC /* FCGraphicsAPI.m */; };
+		64A71751140FFF2F008000BC /* FCScrollableChallengeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71750140FFF2F008000BC /* FCScrollableChallengeButton.m */; };
+		64A71765140FFF88008000BC /* FCBitmapStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71755140FFF88008000BC /* FCBitmapStyle.m */; };
+		64A71766140FFF88008000BC /* FCGradientStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71758140FFF88008000BC /* FCGradientStyle.m */; };
+		64A71767140FFF88008000BC /* FCProgressStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7175B140FFF88008000BC /* FCProgressStyle.m */; };
+		64A71768140FFF88008000BC /* FCComplexCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7175F140FFF88008000BC /* FCComplexCorner.m */; };
+		64A71769140FFF88008000BC /* FCRectangleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71761140FFF88008000BC /* FCRectangleStyle.m */; };
+		64A7176A140FFF88008000BC /* FCShapeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71764140FFF88008000BC /* FCShapeStyle.m */; };
+		64A7176C14104216008000BC /* buttonIconTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A7176B14104216008000BC /* buttonIconTest.png */; };
+		64A7176E141050FE008000BC /* buttonLockTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 64A7176D141050FE008000BC /* buttonLockTest.png */; };
+		64A71772141135E4008000BC /* iSewLevelScrollableStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A71771141135E4008000BC /* iSewLevelScrollableStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64A7172F140FFC09008000BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64A716FC140FFC09008000BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64A71704140FFC09008000BC;
+			remoteInfo = iSewWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64A71705140FFC09008000BC /* iSewWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSewWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A71709140FFC09008000BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64A7170B140FFC09008000BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64A7170D140FFC09008000BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64A71711140FFC09008000BC /* iSewWork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSewWork-Info.plist"; sourceTree = "<group>"; };
+		64A71713140FFC09008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64A71715140FFC09008000BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64A71717140FFC09008000BC /* iSewWork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSewWork-Prefix.pch"; sourceTree = "<group>"; };
+		64A71718140FFC09008000BC /* iSewWorkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSewWorkAppDelegate.h; sourceTree = "<group>"; };
+		64A71719140FFC09008000BC /* iSewWorkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSewWorkAppDelegate.m; sourceTree = "<group>"; };
+		64A7171C140FFC09008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		64A7171E140FFC09008000BC /* iSewWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSewWorkViewController.h; sourceTree = "<group>"; };
+		64A7171F140FFC09008000BC /* iSewWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSewWorkViewController.m; sourceTree = "<group>"; };
+		64A71722140FFC09008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iSewWorkViewController.xib; sourceTree = "<group>"; };
+		64A71729140FFC09008000BC /* iSewWorkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSewWorkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A7172A140FFC09008000BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64A71733140FFC09008000BC /* iSewWorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSewWorkTests-Info.plist"; sourceTree = "<group>"; };
+		64A71735140FFC09008000BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64A71737140FFC09008000BC /* iSewWorkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iSewWorkTests.h; sourceTree = "<group>"; };
+		64A71739140FFC09008000BC /* iSewWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSewWorkTests.m; sourceTree = "<group>"; };
+		64A71745140FFC5E008000BC /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawView.h; path = CustomViews/DrawView/DrawView.h; sourceTree = "<group>"; };
+		64A71746140FFC5E008000BC /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawView.m; path = CustomViews/DrawView/DrawView.m; sourceTree = "<group>"; };
+		64A71749140FFDF0008000BC /* FCScrollableChallengeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCScrollableChallengeButton.h; path = CustomViews/FCScrollableChallengeButton/FCScrollableChallengeButton.h; sourceTree = "<group>"; };
+		64A7174C140FFE40008000BC /* FCGraphicsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCGraphicsAPI.h; path = FCGraphicsAPI/FCGraphicsAPI.h; sourceTree = "<group>"; };
+		64A7174D140FFE40008000BC /* FCGraphicsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCGraphicsAPI.m; path = FCGraphicsAPI/FCGraphicsAPI.m; sourceTree = "<group>"; };
+		64A71750140FFF2F008000BC /* FCScrollableChallengeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FCScrollableChallengeButton.m; path = CustomViews/FCScrollableChallengeButton/FCScrollableChallengeButton.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		64A71754140FFF88008000BC /* FCBitmapStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBitmapStyle.h; sourceTree = "<group>"; };
+		64A71755140FFF88008000BC /* FCBitmapStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBitmapStyle.m; sourceTree = "<group>"; };
+		64A71757140FFF88008000BC /* FCGradientStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGradientStyle.h; sourceTree = "<group>"; };
+		64A71758140FFF88008000BC /* FCGradientStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCGradientStyle.m; sourceTree = "<group>"; };
+		64A7175A140FFF88008000BC /* FCProgressStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCProgressStyle.h; sourceTree = "<group>"; };
+		64A7175B140FFF88008000BC /* FCProgressStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCProgressStyle.m; sourceTree = "<group>"; };
+		64A7175E140FFF88008000BC /* FCComplexCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCComplexCorner.h; sourceTree = "<group>"; };
+		64A7175F140FFF88008000BC /* FCComplexCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCComplexCorner.m; sourceTree = "<group>"; };
+		64A71760140FFF88008000BC /* FCRectangleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCRectangleStyle.h; sourceTree = "<group>"; };
+		64A71761140FFF88008000BC /* FCRectangleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCRectangleStyle.m; sourceTree = "<group>"; };
+		64A71763140FFF88008000BC /* FCShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShapeStyle.h; sourceTree = "<group>"; };
+		64A71764140FFF88008000BC /* FCShapeStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShapeStyle.m; sourceTree = "<group>"; };
+		64A7176B14104216008000BC /* buttonIconTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonIconTest.png; sourceTree = "<group>"; };
+		64A7176D141050FE008000BC /* buttonLockTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonLockTest.png; sourceTree = "<group>"; };
+		64A71770141135E4008000BC /* iSewLevelScrollableStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iSewLevelScrollableStyle.h; path = iSewLevelScrollableStyle/iSewLevelScrollableStyle.h; sourceTree = "<group>"; };
+		64A71771141135E4008000BC /* iSewLevelScrollableStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iSewLevelScrollableStyle.m; path = iSewLevelScrollableStyle/iSewLevelScrollableStyle.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64A71702140FFC09008000BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A7170A140FFC09008000BC /* UIKit.framework in Frameworks */,
+				64A7170C140FFC09008000BC /* Foundation.framework in Frameworks */,
+				64A7170E140FFC09008000BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A71725140FFC09008000BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A7172B140FFC09008000BC /* SenTestingKit.framework in Frameworks */,
+				64A7172C140FFC09008000BC /* UIKit.framework in Frameworks */,
+				64A7172D140FFC09008000BC /* Foundation.framework in Frameworks */,
+				64A7172E140FFC09008000BC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64A716FA140FFC09008000BC = {
+			isa = PBXGroup;
+			children = (
+				64A7170F140FFC09008000BC /* iSewWork */,
+				64A71731140FFC09008000BC /* iSewWorkTests */,
+				64A71708140FFC09008000BC /* Frameworks */,
+				64A71706140FFC09008000BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64A71706140FFC09008000BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64A71705140FFC09008000BC /* iSewWork.app */,
+				64A71729140FFC09008000BC /* iSewWorkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64A71708140FFC09008000BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A71709140FFC09008000BC /* UIKit.framework */,
+				64A7170B140FFC09008000BC /* Foundation.framework */,
+				64A7170D140FFC09008000BC /* CoreGraphics.framework */,
+				64A7172A140FFC09008000BC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A7170F140FFC09008000BC /* iSewWork */ = {
+			isa = PBXGroup;
+			children = (
+				64A7174F140FFE48008000BC /* FCGraphicsAPI */,
+				64A71743140FFC20008000BC /* CustomViews */,
+				64A71718140FFC09008000BC /* iSewWorkAppDelegate.h */,
+				64A71719140FFC09008000BC /* iSewWorkAppDelegate.m */,
+				64A7171B140FFC09008000BC /* MainWindow.xib */,
+				64A7171E140FFC09008000BC /* iSewWorkViewController.h */,
+				64A7171F140FFC09008000BC /* iSewWorkViewController.m */,
+				64A71721140FFC09008000BC /* iSewWorkViewController.xib */,
+				64A71710140FFC09008000BC /* Supporting Files */,
+			);
+			path = iSewWork;
+			sourceTree = "<group>";
+		};
+		64A71710140FFC09008000BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A7176D141050FE008000BC /* buttonLockTest.png */,
+				64A7176B14104216008000BC /* buttonIconTest.png */,
+				64A71711140FFC09008000BC /* iSewWork-Info.plist */,
+				64A71712140FFC09008000BC /* InfoPlist.strings */,
+				64A71715140FFC09008000BC /* main.m */,
+				64A71717140FFC09008000BC /* iSewWork-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64A71731140FFC09008000BC /* iSewWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				64A71737140FFC09008000BC /* iSewWorkTests.h */,
+				64A71739140FFC09008000BC /* iSewWorkTests.m */,
+				64A71732140FFC09008000BC /* Supporting Files */,
+			);
+			path = iSewWorkTests;
+			sourceTree = "<group>";
+		};
+		64A71732140FFC09008000BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A71733140FFC09008000BC /* iSewWorkTests-Info.plist */,
+				64A71734140FFC09008000BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64A71743140FFC20008000BC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				64A71748140FFDB0008000BC /* FCScrollableChallengeButton */,
+				64A71744140FFC33008000BC /* DrawView */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		64A71744140FFC33008000BC /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				64A71745140FFC5E008000BC /* DrawView.h */,
+				64A71746140FFC5E008000BC /* DrawView.m */,
+			);
+			name = DrawView;
+			sourceTree = "<group>";
+		};
+		64A71748140FFDB0008000BC /* FCScrollableChallengeButton */ = {
+			isa = PBXGroup;
+			children = (
+				64A71749140FFDF0008000BC /* FCScrollableChallengeButton.h */,
+				64A71750140FFF2F008000BC /* FCScrollableChallengeButton.m */,
+			);
+			name = FCScrollableChallengeButton;
+			sourceTree = "<group>";
+		};
+		64A7174F140FFE48008000BC /* FCGraphicsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				64A71752140FFF88008000BC /* Styles */,
+				64A7174C140FFE40008000BC /* FCGraphicsAPI.h */,
+				64A7174D140FFE40008000BC /* FCGraphicsAPI.m */,
+			);
+			name = FCGraphicsAPI;
+			sourceTree = "<group>";
+		};
+		64A71752140FFF88008000BC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				64A7176F14113547008000BC /* iSewLevelScrollableStyle */,
+				64A71753140FFF88008000BC /* FCBitmapStyle */,
+				64A71756140FFF88008000BC /* FCGradientStyle */,
+				64A71759140FFF88008000BC /* FCProgressStyle */,
+				64A7175C140FFF88008000BC /* FCRectangleStyle */,
+				64A71762140FFF88008000BC /* FCShapeStyle */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		64A71753140FFF88008000BC /* FCBitmapStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A71754140FFF88008000BC /* FCBitmapStyle.h */,
+				64A71755140FFF88008000BC /* FCBitmapStyle.m */,
+			);
+			path = FCBitmapStyle;
+			sourceTree = "<group>";
+		};
+		64A71756140FFF88008000BC /* FCGradientStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A71757140FFF88008000BC /* FCGradientStyle.h */,
+				64A71758140FFF88008000BC /* FCGradientStyle.m */,
+			);
+			path = FCGradientStyle;
+			sourceTree = "<group>";
+		};
+		64A71759140FFF88008000BC /* FCProgressStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A7175A140FFF88008000BC /* FCProgressStyle.h */,
+				64A7175B140FFF88008000BC /* FCProgressStyle.m */,
+			);
+			path = FCProgressStyle;
+			sourceTree = "<group>";
+		};
+		64A7175C140FFF88008000BC /* FCRectangleStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A7175D140FFF88008000BC /* FCComplexCorner */,
+				64A71760140FFF88008000BC /* FCRectangleStyle.h */,
+				64A71761140FFF88008000BC /* FCRectangleStyle.m */,
+			);
+			path = FCRectangleStyle;
+			sourceTree = "<group>";
+		};
+		64A7175D140FFF88008000BC /* FCComplexCorner */ = {
+			isa = PBXGroup;
+			children = (
+				64A7175E140FFF88008000BC /* FCComplexCorner.h */,
+				64A7175F140FFF88008000BC /* FCComplexCorner.m */,
+			);
+			path = FCComplexCorner;
+			sourceTree = "<group>";
+		};
+		64A71762140FFF88008000BC /* FCShapeStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A71763140FFF88008000BC /* FCShapeStyle.h */,
+				64A71764140FFF88008000BC /* FCShapeStyle.m */,
+			);
+			path = FCShapeStyle;
+			sourceTree = "<group>";
+		};
+		64A7176F14113547008000BC /* iSewLevelScrollableStyle */ = {
+			isa = PBXGroup;
+			children = (
+				64A71770141135E4008000BC /* iSewLevelScrollableStyle.h */,
+				64A71771141135E4008000BC /* iSewLevelScrollableStyle.m */,
+			);
+			name = iSewLevelScrollableStyle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64A71704140FFC09008000BC /* iSewWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A7173D140FFC09008000BC /* Build configuration list for PBXNativeTarget "iSewWork" */;
+			buildPhases = (
+				64A71701140FFC09008000BC /* Sources */,
+				64A71702140FFC09008000BC /* Frameworks */,
+				64A71703140FFC09008000BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSewWork;
+			productName = iSewWork;
+			productReference = 64A71705140FFC09008000BC /* iSewWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64A71728140FFC09008000BC /* iSewWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A71740140FFC09008000BC /* Build configuration list for PBXNativeTarget "iSewWorkTests" */;
+			buildPhases = (
+				64A71724140FFC09008000BC /* Sources */,
+				64A71725140FFC09008000BC /* Frameworks */,
+				64A71726140FFC09008000BC /* Resources */,
+				64A71727140FFC09008000BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64A71730140FFC09008000BC /* PBXTargetDependency */,
+			);
+			name = iSewWorkTests;
+			productName = iSewWorkTests;
+			productReference = 64A71729140FFC09008000BC /* iSewWorkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64A716FC140FFC09008000BC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 64A716FF140FFC09008000BC /* Build configuration list for PBXProject "iSewWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64A716FA140FFC09008000BC;
+			productRefGroup = 64A71706140FFC09008000BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64A71704140FFC09008000BC /* iSewWork */,
+				64A71728140FFC09008000BC /* iSewWorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64A71703140FFC09008000BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A71714140FFC09008000BC /* InfoPlist.strings in Resources */,
+				64A7171D140FFC09008000BC /* MainWindow.xib in Resources */,
+				64A71723140FFC09008000BC /* iSewWorkViewController.xib in Resources */,
+				64A7176C14104216008000BC /* buttonIconTest.png in Resources */,
+				64A7176E141050FE008000BC /* buttonLockTest.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A71726140FFC09008000BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A71736140FFC09008000BC /* InfoPlist.strings in Resources */,
+				64A71738140FFC09008000BC /* iSewWorkTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64A71727140FFC09008000BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64A71701140FFC09008000BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A71716140FFC09008000BC /* main.m in Sources */,
+				64A7171A140FFC09008000BC /* iSewWorkAppDelegate.m in Sources */,
+				64A71720140FFC09008000BC /* iSewWorkViewController.m in Sources */,
+				64A71747140FFC5E008000BC /* DrawView.m in Sources */,
+				64A7174E140FFE40008000BC /* FCGraphicsAPI.m in Sources */,
+				64A71751140FFF2F008000BC /* FCScrollableChallengeButton.m in Sources */,
+				64A71765140FFF88008000BC /* FCBitmapStyle.m in Sources */,
+				64A71766140FFF88008000BC /* FCGradientStyle.m in Sources */,
+				64A71767140FFF88008000BC /* FCProgressStyle.m in Sources */,
+				64A71768140FFF88008000BC /* FCComplexCorner.m in Sources */,
+				64A71769140FFF88008000BC /* FCRectangleStyle.m in Sources */,
+				64A7176A140FFF88008000BC /* FCShapeStyle.m in Sources */,
+				64A71772141135E4008000BC /* iSewLevelScrollableStyle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A71724140FFC09008000BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A7173A140FFC09008000BC /* iSewWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64A71730140FFC09008000BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64A71704140FFC09008000BC /* iSewWork */;
+			targetProxy = 64A7172F140FFC09008000BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64A71712140FFC09008000BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A71713140FFC09008000BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		64A7171B140FFC09008000BC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A7171C140FFC09008000BC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		64A71721140FFC09008000BC /* iSewWorkViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A71722140FFC09008000BC /* en */,
+			);
+			name = iSewWorkViewController.xib;
+			sourceTree = "<group>";
+		};
+		64A71734140FFC09008000BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64A71735140FFC09008000BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64A7173B140FFC09008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		64A7173C140FFC09008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64A7173E140FFC09008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSewWork/iSewWork-Prefix.pch";
+				INFOPLIST_FILE = "iSewWork/iSewWork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		64A7173F140FFC09008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSewWork/iSewWork-Prefix.pch";
+				INFOPLIST_FILE = "iSewWork/iSewWork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		64A71741140FFC09008000BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSewWork.app/iSewWork";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSewWork/iSewWork-Prefix.pch";
+				INFOPLIST_FILE = "iSewWorkTests/iSewWorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		64A71742140FFC09008000BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSewWork.app/iSewWork";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSewWork/iSewWork-Prefix.pch";
+				INFOPLIST_FILE = "iSewWorkTests/iSewWorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64A716FF140FFC09008000BC /* Build configuration list for PBXProject "iSewWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A7173B140FFC09008000BC /* Debug */,
+				64A7173C140FFC09008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A7173D140FFC09008000BC /* Build configuration list for PBXNativeTarget "iSewWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A7173E140FFC09008000BC /* Debug */,
+				64A7173F140FFC09008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A71740140FFC09008000BC /* Build configuration list for PBXNativeTarget "iSewWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64A71741140FFC09008000BC /* Debug */,
+				64A71742140FFC09008000BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64A716FC140FFC09008000BC /* Project object */;
+}
